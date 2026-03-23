@@ -1,0 +1,130 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function CTASection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section ref={ref} className="relative py-0 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-1.webp"
+          alt="Epcot background"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black/60 to-orange-900/30" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-0 min-h-[600px] items-center">
+          {/* Image side */}
+          <motion.div
+            className="relative hidden lg:flex items-end justify-center pt-0 pb-0"
+            initial={{ opacity: 0, x: -60 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="relative w-full h-[600px]">
+              <Image
+                src="https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney.webp"
+                alt="Casal feliz na Disney"
+                fill
+                className="object-cover object-top"
+                sizes="50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20" />
+            </div>
+          </motion.div>
+
+          {/* Text side */}
+          <motion.div
+            className="py-20 lg:pl-16 xl:pl-24"
+            initial={{ opacity: 0, x: 60 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+          >
+            <motion.p
+              className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-6"
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ delay: 0.4 }}
+            >
+              Comece Agora
+            </motion.p>
+
+            <motion.h2
+              className="text-white font-[Montserrat] font-black leading-tight mb-6"
+              style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)" }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.3 }}
+            >
+              Faça seu orçamento
+              <span className="text-[#c9a84c]"> hoje!</span>
+            </motion.h2>
+
+            <motion.div
+              className="w-12 h-1 bg-[#c9a84c] mb-8"
+              initial={{ width: 0 }}
+              animate={isInView ? { width: 48 } : {}}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            />
+
+            <motion.p
+              className="text-white/80 text-lg leading-relaxed mb-10"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.5 }}
+            >
+              Descubra uma jornada sem preocupações pelos parques temáticos de
+              Orlando com a Roteiro VIP. Solicite seu orçamento hoje e deixe-nos
+              transformar seus sonhos em realidade!
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.7 }}
+            >
+              <Link
+                href="/orcamento"
+                className="inline-flex items-center gap-3 bg-[#c9a84c] text-black font-[Montserrat] font-bold tracking-wider px-10 py-5 hover:bg-white hover:text-black transition-all duration-300 text-sm group"
+              >
+                Faça seu Orçamento
+                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </motion.div>
+
+            {/* Stats */}
+            <motion.div
+              className="grid grid-cols-3 gap-6 mt-14 pt-10 border-t border-white/20"
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.7, delay: 0.9 }}
+            >
+              {[
+                { value: "9+", label: "Parques" },
+                { value: "100%", label: "Personalizado" },
+                { value: "VIP", label: "Experiência" },
+              ].map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <p className="text-white font-[Montserrat] font-black text-2xl">{stat.value}</p>
+                  <p className="text-white/60 font-[Montserrat] text-xs tracking-wider mt-1 uppercase">{stat.label}</p>
+                </div>
+              ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
