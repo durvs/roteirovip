@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
+  --font-heading: var(--font-montserrat), sans-serif;
+  --font-body: var(--font-source-sans), sans-serif;
+  --font-sans: var(--font-source-sans), sans-serif;
   --color-gold: #c9a84c;
   --color-gold-light: #e8c96a;
   --color-navy: #1a2744;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: var(--font-body);
   color: #0a0a0a;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -28,21 +28,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-heading);
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
-}
-::-webkit-scrollbar-thumb {
-  background: #c9a84c;
-  border-radius: 3px;
-}
-
-::selection {
-  background: #c9a84c;
-  color: #0a0a0a;
-}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #c9a84c; border-radius: 3px; }
+::selection { background: #c9a84c; color: #0a0a0a; }

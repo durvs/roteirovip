@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import { Montserrat, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-source-sans",
+  weight: ["300", "400", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Roteiro VIP — Sua Viagem ao Estilo VIP",
@@ -20,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="h-full">
+    <html lang="pt-BR" className={`${montserrat.variable} ${sourceSans.variable} h-full`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

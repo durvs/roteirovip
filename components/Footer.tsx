@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 function FacebookIcon() {
   return (
@@ -44,15 +45,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-6 group">
-              <div className="w-8 h-8 text-white">
-                <svg viewBox="0 0 32 32" fill="currentColor">
-                  <polygon points="16,2 30,28 2,28" />
-                </svg>
+            <Link href="/" className="inline-flex mb-6">
+              <div className="relative h-10 w-44">
+                <Image
+                  src="/logo.webp"
+                  alt="Roteiro VIP"
+                  fill
+                  className="object-contain object-left brightness-0 invert"
+                />
               </div>
-              <span className="font-[Montserrat] font-black text-lg tracking-[0.15em] uppercase text-white">
-                ROTEIRO VIP
-              </span>
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed mb-8 font-light">
@@ -89,7 +90,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-[Montserrat] font-black text-sm tracking-widest uppercase text-white mb-6">
+            <h3 className="font-heading font-black text-sm tracking-widest uppercase text-white mb-6">
               Serviços
             </h3>
             <ul className="space-y-3">
@@ -108,7 +109,7 @@ export default function Footer() {
 
           {/* Parks */}
           <div>
-            <h3 className="font-[Montserrat] font-black text-sm tracking-widest uppercase text-white mb-6">
+            <h3 className="font-heading font-black text-sm tracking-widest uppercase text-white mb-6">
               Parques
             </h3>
             <ul className="space-y-3">
@@ -127,7 +128,7 @@ export default function Footer() {
 
           {/* Contact / CTA */}
           <div>
-            <h3 className="font-[Montserrat] font-black text-sm tracking-widest uppercase text-white mb-6">
+            <h3 className="font-heading font-black text-sm tracking-widest uppercase text-white mb-6">
               Contato
             </h3>
             <ul className="space-y-3 mb-8">
@@ -151,7 +152,7 @@ export default function Footer() {
 
             <Link
               href="/orcamento"
-              className="inline-block bg-[#c9a84c] text-black font-[Montserrat] font-bold text-xs tracking-widest px-6 py-3 hover:bg-white transition-colors"
+              className="inline-block bg-[#c9a84c] text-black font-heading font-bold text-xs tracking-widest px-6 py-3 hover:bg-white transition-colors"
             >
               Faça seu Orçamento
             </Link>

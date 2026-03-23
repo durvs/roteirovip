@@ -1,0 +1,1511 @@
+{
+  "services": [
+    {
+      "type": "service",
+      "slug": "assessoria-vip",
+      "url": "https://www.roteirovip.com/services/assessoria_vip/",
+      "seo": {
+        "title": "Assessoria VIP",
+        "description": "Desfrute de viagens sem estresse com nossa Assessoria. Dos melhores destinos aos detalhes logísticos, nós cuidamos de tudo para você.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Assessoria VIP"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "Se você pretende viajar e precisa de ajuda e companhia para realizar suas compras nos outlets e shoppings, nosso serviço é perfeito para você!",
+        "Nós oferecemos assessoria para compras no enxoval de bebê, kids, jovens, mulher e casa. Conte com as melhores dicas, lojas e cupons de desconto. Criamos um roteiro de compras exclusivo para que você possa aproveitar ao máximo seu tempo e dinheiro.",
+        "É necessário que você faça a solicitação com antecedência através do Whatssap: +1 (407) 367-9716 ou pelo formulário no site.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!",
+        "Babysitter As vezes viajar com crianças pode ser cansativo, então vamos te ajudar com isso!Para quem vem para Orlando e precisa de uma Babysitter de confiança, com experiência e dedicação, nossa equipe é a solução perfeita.Oferecemos o serviço de babás&hellip;",
+        "Ensaio Fotográfico Deixe nossas equipes cuidarem das suas fotos enquanto você se diverte ao máximo! Faça ensaios fotográficos e leve para casa souvenirs para guardar como suas lembranças. Personalizamos os ensaios de acordo com suas preferências, seja para família, casal,&hellip;",
+        "Guia VIP em Orlando Aproveite uma experiência VIP nos parques temáticos de Orlando! Nossos guias especializados garantem diversão eficiente, com roteiros personalizados e logística para otimizar seu tempo. Acompanhamos grupos e famílias em todos os parques, incluindo: Magic Kingdom, Animal&hellip;",
+        "Chofer Está procurando o melhor transporte executivo para sua viagem? a gente te ajuda. Para quem vem para Orlando e precisa de um motorista brasileiro de confiança, com experiência e luxo, você está no lugar certo!Transporte privado para shoppings, hotéis,&hellip;",
+        "Assessoria VIP Se você pretende viajar e precisa de ajuda e companhia para realizar suas compras nos outlets e shoppings, nosso serviço é perfeito para você! Nós oferecemos assessoria para compras no enxoval de bebê, kids, jovens, mulher e casa.&hellip;",
+        "Roteiro Personalizado Está precisando de ajuda para organizar sua próxima viagem? Nós te ajudamos! Organizamos seu roteiro personalizado ao estilo VIP, com todas as informações necessárias para você fechar sua viagem!.Reservamos os passeios, hospedagem, carro e ingressos para parques e&hellip;"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:06.638Z"
+    },
+    {
+      "type": "service",
+      "slug": "babysitter",
+      "url": "https://www.roteirovip.com/services/babysitter/",
+      "seo": {
+        "title": "Babysitter",
+        "description": "Desfrute de momentos tranquilos enquanto nossas babysitter cuidam dos seus pequenos com atenção dedicada e cuidado amoroso.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Babysitter"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "As vezes viajar com crianças pode ser cansativo, então vamos te ajudar com isso! Para quem vem para Orlando e precisa de uma Babysitter de confiança, com experiência e dedicação, nossa equipe é a solução perfeita. Oferecemos o serviço de babás com experiência para cuidar da sua criança com todo o cuidado e carinho. É necessário que a solicitação seja feita com antecedência através do Whatssap: +1 (407) 367-9716 ou pelo formulário no site.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!",
+        "Babysitter As vezes viajar com crianças pode ser cansativo, então vamos te ajudar com isso!Para quem vem para Orlando e precisa de uma Babysitter de confiança, com experiência e dedicação, nossa equipe é a solução perfeita.Oferecemos o serviço de babás&hellip;",
+        "Ensaio Fotográfico Deixe nossas equipes cuidarem das suas fotos enquanto você se diverte ao máximo! Faça ensaios fotográficos e leve para casa souvenirs para guardar como suas lembranças. Personalizamos os ensaios de acordo com suas preferências, seja para família, casal,&hellip;",
+        "Guia VIP em Orlando Aproveite uma experiência VIP nos parques temáticos de Orlando! Nossos guias especializados garantem diversão eficiente, com roteiros personalizados e logística para otimizar seu tempo. Acompanhamos grupos e famílias em todos os parques, incluindo: Magic Kingdom, Animal&hellip;",
+        "Chofer Está procurando o melhor transporte executivo para sua viagem? a gente te ajuda. Para quem vem para Orlando e precisa de um motorista brasileiro de confiança, com experiência e luxo, você está no lugar certo!Transporte privado para shoppings, hotéis,&hellip;",
+        "Assessoria VIP Se você pretende viajar e precisa de ajuda e companhia para realizar suas compras nos outlets e shoppings, nosso serviço é perfeito para você! Nós oferecemos assessoria para compras no enxoval de bebê, kids, jovens, mulher e casa.&hellip;",
+        "Roteiro Personalizado Está precisando de ajuda para organizar sua próxima viagem? Nós te ajudamos! Organizamos seu roteiro personalizado ao estilo VIP, com todas as informações necessárias para você fechar sua viagem!.Reservamos os passeios, hospedagem, carro e ingressos para parques e&hellip;"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:15.718Z"
+    },
+    {
+      "type": "service",
+      "slug": "chofer",
+      "url": "https://www.roteirovip.com/services/chofer/",
+      "seo": {
+        "title": "Chofer",
+        "description": "Desfrute de viagens confortáveis e seguras com nosso serviço de Chofer. Nossos motoristas profissionais garantem uma experiência VIP.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Chofer"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "Está procurando o melhor transporte executivo para sua viagem? a gente te ajuda. Para quem vem para Orlando e precisa de um motorista brasileiro de confiança, com experiência e luxo, você está no lugar certo! Transporte privado para shoppings, hotéis, aeroportos, e outlets. Não importa o tamanho do grupo, nós estaremos prontos para te atender. Sedans, Minivans, Vans e SUVs ao seu dispor.",
+        "É necessário que a solicitação seja feita com antecedência através do Whatssap: +1 (407) 367-9716 ou pelo formulário no site.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!",
+        "Babysitter As vezes viajar com crianças pode ser cansativo, então vamos te ajudar com isso!Para quem vem para Orlando e precisa de uma Babysitter de confiança, com experiência e dedicação, nossa equipe é a solução perfeita.Oferecemos o serviço de babás&hellip;",
+        "Ensaio Fotográfico Deixe nossas equipes cuidarem das suas fotos enquanto você se diverte ao máximo! Faça ensaios fotográficos e leve para casa souvenirs para guardar como suas lembranças. Personalizamos os ensaios de acordo com suas preferências, seja para família, casal,&hellip;",
+        "Guia VIP em Orlando Aproveite uma experiência VIP nos parques temáticos de Orlando! Nossos guias especializados garantem diversão eficiente, com roteiros personalizados e logística para otimizar seu tempo. Acompanhamos grupos e famílias em todos os parques, incluindo: Magic Kingdom, Animal&hellip;",
+        "Chofer Está procurando o melhor transporte executivo para sua viagem? a gente te ajuda. Para quem vem para Orlando e precisa de um motorista brasileiro de confiança, com experiência e luxo, você está no lugar certo!Transporte privado para shoppings, hotéis,&hellip;",
+        "Assessoria VIP Se você pretende viajar e precisa de ajuda e companhia para realizar suas compras nos outlets e shoppings, nosso serviço é perfeito para você! Nós oferecemos assessoria para compras no enxoval de bebê, kids, jovens, mulher e casa.&hellip;",
+        "Roteiro Personalizado Está precisando de ajuda para organizar sua próxima viagem? Nós te ajudamos! Organizamos seu roteiro personalizado ao estilo VIP, com todas as informações necessárias para você fechar sua viagem!.Reservamos os passeios, hospedagem, carro e ingressos para parques e&hellip;"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:13.170Z"
+    },
+    {
+      "type": "service",
+      "slug": "guia-vip",
+      "url": "https://www.roteirovip.com/services/guia_vip/",
+      "seo": {
+        "title": "Guia VIP",
+        "description": "Desvende os encantos dos famosos parques de Orlando com nosso Guia. Explore as melhores atrações da Disney, Universal, SeaWorld e mais.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Guia VIP"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "Aproveite uma experiência VIP nos parques temáticos de Orlando! Nossos guias especializados garantem diversão eficiente, com roteiros personalizados e logística para otimizar seu tempo. Acompanhamos grupos e famílias em todos os parques, incluindo: Magic Kingdom, Animal Kingdom, Hollywood Studios, Epcot, Universal Studios, Islands of Adventure, Sea World, Busch Gardens e Legoland. Agendamos Fast-Pass e garantimos 6 horas de diversão sem contratempos. Viva a magia dos parques ao máximo conosco!",
+        "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "Tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.",
+        "Quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/WhatsApp-Image-2019-07-29-at-7.15.22-PM.jpeg",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:04.168Z"
+    },
+    {
+      "type": "service",
+      "slug": "registro-vip",
+      "url": "https://www.roteirovip.com/services/registro_vip/",
+      "seo": {
+        "title": "Ensaio Fotográfico",
+        "description": "Transforme suas viagens em memórias eternas com nosso ensaio fotográfico. Capturamos os momentos mais especiais da sua jornada.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Registro VIP"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "Deixe nossas equipes cuidarem das suas fotos enquanto você se diverte ao máximo! Faça ensaios fotográficos e leve para casa souvenirs para guardar como suas lembranças.",
+        "Personalizamos os ensaios de acordo com suas preferências, seja para família, casal, amigos ou até mesmo para viajantes individuais. Nosso objetivo é garantir sua satisfação em cada clique.",
+        "Queremos que, por meio de nossas fotografias, vocês revivam sentimentos e se lembrem da experiência de compartilhar seus momentos mais especiais conosco.",
+        "Solicite seu ensaio com antecedência através do Whatssap: +1 (407) 367-9716 ou pelo formulário no site.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!",
+        "Babysitter As vezes viajar com crianças pode ser cansativo, então vamos te ajudar com isso!Para quem vem para Orlando e precisa de uma Babysitter de confiança, com experiência e dedicação, nossa equipe é a solução perfeita.Oferecemos o serviço de babás&hellip;",
+        "Ensaio Fotográfico Deixe nossas equipes cuidarem das suas fotos enquanto você se diverte ao máximo! Faça ensaios fotográficos e leve para casa souvenirs para guardar como suas lembranças. Personalizamos os ensaios de acordo com suas preferências, seja para família, casal,&hellip;",
+        "Guia VIP em Orlando Aproveite uma experiência VIP nos parques temáticos de Orlando! Nossos guias especializados garantem diversão eficiente, com roteiros personalizados e logística para otimizar seu tempo. Acompanhamos grupos e famílias em todos os parques, incluindo: Magic Kingdom, Animal&hellip;",
+        "Chofer Está procurando o melhor transporte executivo para sua viagem? a gente te ajuda. Para quem vem para Orlando e precisa de um motorista brasileiro de confiança, com experiência e luxo, você está no lugar certo!Transporte privado para shoppings, hotéis,&hellip;",
+        "Assessoria VIP Se você pretende viajar e precisa de ajuda e companhia para realizar suas compras nos outlets e shoppings, nosso serviço é perfeito para você! Nós oferecemos assessoria para compras no enxoval de bebê, kids, jovens, mulher e casa.&hellip;",
+        "Roteiro Personalizado Está precisando de ajuda para organizar sua próxima viagem? Nós te ajudamos! Organizamos seu roteiro personalizado ao estilo VIP, com todas as informações necessárias para você fechar sua viagem!.Reservamos os passeios, hospedagem, carro e ingressos para parques e&hellip;"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:10.690Z"
+    },
+    {
+      "type": "service",
+      "slug": "roteiro-personalizado",
+      "url": "https://www.roteirovip.com/services/roteiro-personalizado/",
+      "seo": {
+        "title": "Roteiro Personalizado",
+        "description": "Descubra o seu destino ideal com nosso Roteiro Personalizado sob medida para você. Deixe-nos criar uma experiência única.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Roteiro Personalizado"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Descubra também"
+        }
+      ],
+      "paragraphs": [
+        "Está precisando de ajuda para organizar sua próxima viagem? Nós te ajudamos! Organizamos seu roteiro personalizado ao estilo VIP, com todas as informações necessárias para você fechar sua viagem! . Reservamos os passeios, hospedagem, carro e ingressos para parques e muitos outros serviços para que sua viagem seja mais que perfeita. Elaboramos roteiros exclusivamente para cada cliente, de acordo com o estilo e orçamento.",
+        "Seu roteiro será finalizado e entregue de acordo com a programação e detalhes definidos na consultoria, levando em consideração tudo que foi solicitado e acordado.",
+        "É necessário que a solicitação seja feita com antecedência através do Whatssap: +1 (407) 367-9716 ou pelo formulário no site.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Faça seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "A melhor empresa de roteiros personalizados com certeza! Minha viagem foi muito mais organizada e o tempo bem aproveitado.",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas.",
+        "Dê uma olhada em outros de nossos serviços. Tudo para garantir que sua experiência seja a melhor possível!"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney-682x1024.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:01.538Z"
+    }
+  ],
+  "parks": [
+    {
+      "type": "park",
+      "slug": "animal-kingdom",
+      "url": "https://www.roteirovip.com/animal-kingdom/",
+      "seo": {
+        "title": "Animal Kingdom",
+        "description": "Explore conosco o mundo fascinante do Animal Kingdom neste post cativante. Descubra as maravilhas da vida selvagem.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Animal-Kingdom.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Animal Kingdom"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Descubra a Magia da Natureza no Animal Kingdom: Uma Aventura Inesquecível",
+        "Bem-vindos, aventureiros, a mais uma emocionante jornada pelo mundo mágico da Disney! Hoje, vamos explorar o incrível Animal Kingdom, um lugar onde a magia encontra a natureza de uma forma única e emocionante.",
+        "Ao cruzar os portões do Animal Kingdom, você se vê imerso em um mundo de beleza natural e vida selvagem exuberante. Aqui, a experiência é mais do que apenas um passeio &#8211; é uma verdadeira jornada pela fauna e flora de todo o mundo, em um ambiente que combina aventura, conservação e diversão.",
+        "Prepare-se para se maravilhar com os encontros emocionantes que o Animal Kingdom proporciona. De safáris africanos a caminhadas pela selva asiática, cada experiência oferece a oportunidade única de se aproximar de animais exóticos e aprender sobre seus habitats naturais.",
+        "Além dos encontros com animais, o Animal Kingdom oferece uma variedade de atrações emocionantes para todas as idades. Desde voar com os Banshees em Pandora &#8211; O Mundo de Avatar até embarcar em uma aventura aquática com o Kali River Rapids, há algo para todos os gostos e níveis de coragem.",
+        "Prepare-se para se encantar com os espetáculos e entretenimentos únicos do Animal Kingdom. De apresentações teatrais a desfiles coloridos, cada experiência é uma celebração da natureza e da magia da Disney.",
+        "Para aproveitar ao máximo sua visita ao Animal Kingdom, não deixe de conferir nossas dicas para exploradores. Desde os melhores momentos para visitar as atrações mais populares até os locais secretos onde você pode encontrar os animais mais incríveis, estamos aqui para garantir que sua aventura seja inesquecível.",
+        "Pronto para começar sua jornada pelo Animal Kingdom? Junte-se a nós enquanto exploramos juntos este reino mágico da natureza e da imaginação. Esteja preparado para se maravilhar, se emocionar e criar memórias que durarão para sempre.",
+        "Junte-se a nós nesta incrível aventura pelo Animal Kingdom. Prepare-se para se surpreender, se divertir e se conectar com o mundo natural de uma forma que só a Disney sabe proporcionar."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Animal-Kingdom.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Magic-Kingdom-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:20.602Z"
+    },
+    {
+      "type": "park",
+      "slug": "busch-gardens",
+      "url": "https://www.roteirovip.com/busch-gardens/",
+      "seo": {
+        "title": "Busch Gardens",
+        "description": "Descubra a emoção selvagem e a beleza da natureza neste post sobre o Busch Gardens. Explore os encantos dos diferentes continentes.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Busch-Gardens.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Busch Gardens"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Explorando a Emoção e a Natureza no Busch Gardens: Uma Aventura Selvagem Awaits!",
+        "Bem-vindos, amantes da aventura e da natureza, a mais uma empolgante jornada pelo mundo dos parques temáticos! Hoje, estamos prestes a mergulhar na emoção selvagem e na beleza natural do Busch Gardens, um destino que combina adrenalina, conservação e diversão em um ambiente único.",
+        "Ao adentrar os portões do Busch Gardens, você é transportado para uma jornada ao redor do mundo, explorando os encantos e a diversidade dos diferentes continentes. Desde as exuberantes florestas da África até as montanhas nevadas da Europa, cada área do parque oferece uma experiência única e emocionante.",
+        "Prepare-se para experimentar a emoção em sua forma mais pura com as incríveis montanhas-russas e atrações do Busch Gardens. Seja desafiando as curvas vertiginosas da SheiKra, mergulhando nas profundezas do Congo River Rapids ou enfrentando a velocidade do Cheetah Hunt, há algo para todos os aventureiros e amantes da adrenalina.",
+        "Além das emocionantes atrações, o Busch Gardens oferece a oportunidade única de se conectar com a vida selvagem e aprender sobre a importância da conservação. De encontros próximos com animais exóticos a apresentações educativas, cada experiência oferece uma visão fascinante do mundo natural e o papel que cada um de nós desempenha em sua preservação.",
+        "Entretenimento e Shows Memoráveis",
+        "Prepare-se para se maravilhar com os espetáculos emocionantes e entretenimentos de classe mundial que o Busch Gardens tem a oferecer. De shows de acrobacias a apresentações teatrais, cada performance é uma celebração da criatividade e do talento que tornam este parque temático um destino imperdível.",
+        "Dicas e Truques para uma Visita Perfeita",
+        "Quer tornar sua visita ao Busch Gardens ainda mais memorável? Não se preocupe, estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, encontrar os melhores lugares para assistir aos shows e muito mais, para garantir que sua aventura seja verdadeiramente inesquecível.",
+        "Prepare-se para uma Aventura Selvagem!",
+        "Junte-se a nós enquanto exploramos juntos os mistérios e maravilhas do Busch Gardens. Esteja preparado para se emocionar, se maravilhar e se divertir enquanto descobrimos tudo o que este destino incrível tem a oferecer.",
+        "Venha conosco nesta jornada inesquecível pelo Busch Gardens. Esteja pronto para se surpreender, se emocionar e criar memórias que durarão para sempre em um dos destinos mais emocionantes do mundo dos parques temáticos."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Busch-Gardens.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-SeaWorld-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Animal-Kingdom-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:30.284Z"
+    },
+    {
+      "type": "park",
+      "slug": "epcot",
+      "url": "https://www.roteirovip.com/epcot/",
+      "seo": {
+        "title": "Epcot",
+        "description": "Explore a visão futurista e a diversidade cultural neste post cativante sobre o Epcot. Descubra as maravilhas da inovação tecnológica.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Epcot"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Descubra o Futuro e a Diversidade Cultural no Epcot: Uma Viagem Inesquecível pela Disney",
+        "Bem-vindos, viajantes do tempo e exploradores culturais, a uma jornada emocionante pelo Epcot, um dos parques temáticos mais emblemáticos da Disney! Hoje, embarcaremos juntos em uma aventura repleta de descobertas, inovações e experiências que irão encantar os corações e as mentes de todos os visitantes.",
+        "Explorando o Futuro na &#8220;Future World&#8221;",
+        "Ao adentrar as portas do Epcot, somos imediatamente transportados para um mundo de possibilidades futuristas na &#8220;Future World&#8221;. Aqui, a inovação tecnológica se funde com a criatividade, oferecendo aos visitantes a oportunidade de explorar a fronteira do conhecimento humano. De emocionantes passeios que nos levam ao espaço sideral a experiências interativas que nos mostram os avanços da ciência, cada momento neste mundo do futuro é uma aventura emocionante.",
+        "Celebrando a Diversidade Cultural no &#8220;World Showcase&#8221;",
+        "Enquanto nos aventuramos pela &#8220;World Showcase&#8221;, somos transportados para diferentes países ao redor do mundo, cada um representado de forma autêntica e encantadora. Dos canais de Veneza às pirâmides do Egito, dos pagodes da China às ruas de Paris, cada pavilhão nos convida a mergulhar nas tradições, na culinária e na cultura únicas de cada nação. É uma experiência verdadeiramente global, onde podemos dar a volta ao mundo em apenas alguns passos.",
+        "A Magia dos Espetáculos e Festivais",
+        "Além das experiências únicas em cada pavilhão, o Epcot também é conhecido por seus espetáculos deslumbrantes e festivais emocionantes ao longo do ano. De shows noturnos espetaculares a eventos sazonais que celebram a comida, a música e as tradições de todo o mundo, há sempre algo novo e emocionante acontecendo no Epcot.",
+        "Dicas para uma Experiência Inesquecível",
+        "Quer aproveitar ao máximo sua visita ao Epcot? Estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, explorar os melhores pavilhões e experiências, e aproveitar ao máximo cada momento neste parque temático único.",
+        "Prepare-se para uma Jornada de Encantamento e Aprendizado",
+        "Junte-se a nós enquanto exploramos juntos o mundo mágico do Epcot. Esteja preparado para se surpreender, se emocionar e se maravilhar enquanto descobrimos tudo o que este destino incrível tem a oferecer.",
+        "Vamos Embarcar Nesta Aventura Juntos?",
+        "Venha conosco nesta emocionante jornada pelo Epcot. Esteja pronto para deixar sua imaginação voar, seus sorrisos se multiplicarem e suas memórias se tornarem tão duradouras quanto a magia da Disney."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Islands-of-Adventure-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Hollywood-Studios-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:37.809Z"
+    },
+    {
+      "type": "park",
+      "slug": "hollywood-studios",
+      "url": "https://www.roteirovip.com/hollywood-studios/",
+      "seo": {
+        "title": "Hollywood Studios",
+        "description": "Descubra os bastidores da magia do cinema neste post envolvente sobre o Hollywood Studios. Explore os emocionantes bastidores das produções.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Hollywood-Studios.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Hollywood Studios"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Explorando os Encantos de Hollywood Studios: Onde a Magia do Cinema Ganha Vida",
+        "Sejam bem-vindos, cinéfilos e amantes da cultura pop, a mais uma emocionante viagem pelos bastidores da magia do cinema! Hoje, estamos prestes a mergulhar no universo fascinante do Hollywood Studios, um lugar onde os sonhos de Hollywood se tornam realidade diante dos nossos olhos.",
+        "Ao adentrar as portas do Hollywood Studios, você é transportado para o mundo glamoroso dos estúdios de cinema de Los Angeles. Prepare-se para desvendar os segredos dos bastidores das produções cinematográficas mais icônicas, enquanto mergulha em cenários autênticos e experiências imersivas que o transportarão para o centro da ação.",
+        "Das emocionantes aventuras de Star Wars: Galaxy&#8217;s Edge à nostalgia dos clássicos de Hollywood representados em Sunset Boulevard, o Hollywood Studios oferece uma variedade de atrações que encantam e emocionam os visitantes de todas as idades. Prepare-se para embarcar em uma jornada épica através de mundos fantásticos e histórias inesquecíveis.",
+        "Encontros com Personagens Inesquecíveis",
+        "Além das atrações, o Hollywood Studios oferece a oportunidade única de encontrar seus personagens favoritos da Disney e de franquias de sucesso, prontos para tirar fotos e compartilhar momentos mágicos com os visitantes. Desde Mickey Mouse até Darth Vader, cada encontro é uma experiência memorável que você não vai querer perder.",
+        "Entretenimento de Tirar o Fôlego",
+        "Prepare-se para se maravilhar com os espetáculos e entretenimentos espetaculares que o Hollywood Studios tem a oferecer. De shows musicais vibrantes a desfiles cheios de energia, cada apresentação é uma celebração da magia do cinema e da cultura pop.",
+        "Dicas para Aproveitar ao Máximo",
+        "Quer tornar sua visita ainda mais especial? Não se preocupe! Estamos aqui para compartilhar dicas e truques para aproveitar ao máximo sua experiência no Hollywood Studios. Desde os melhores lugares para assistir aos shows até os segredos dos bastidores, estamos aqui para garantir que sua aventura seja verdadeiramente inesquecível.",
+        "Pronto para Viver sua Própria História de Cinema?",
+        "Junte-se a nós enquanto exploramos juntos o mundo mágico do Hollywood Studios. Prepare-se para uma jornada emocionante através dos bastidores do cinema e da cultura pop, onde cada momento é uma experiência digna de um blockbuster de Hollywood.",
+        "Venha conosco nesta incrível jornada pelo Hollywood Studios. Prepare-se para se surpreender, se divertir e se emocionar enquanto exploramos juntos as maravilhas deste parque temático único e inesquecível."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Hollywood-Studios.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Magic-Kingdom-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:23.044Z"
+    },
+    {
+      "type": "park",
+      "slug": "islands-of-adventure",
+      "url": "https://www.roteirovip.com/islands-of-adventure/",
+      "seo": {
+        "title": "Islands of Adventure",
+        "description": "Embarque em uma jornada épica pela aventura e fantasia no post cativante sobre Islands of Adventure. Explore os segredos dos mundos mágicos.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Islands-of-Adventure.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Islands of Adventure"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Desvendando os Segredos da Aventura em Islands of Adventure: O Mundo Mágico das Maravilhas",
+        "Bem-vindos, exploradores intrépidos, a mais uma emocionante aventura pelos reinos mágicos dos parques temáticos! Hoje, estamos prestes a mergulhar no mundo fascinante de Islands of Adventure, um lugar onde a imaginação ganha vida e a emoção está sempre à espreita em cada esquina.",
+        "Explorando os Mundos Fantásticos",
+        "Ao atravessar os portões de Islands of Adventure, você é transportado para um universo de maravilhas, onde a fantasia e a aventura se encontram. Prepare-se para explorar os seis incríveis &#8216;islands&#8217;, cada um com sua própria atmosfera única e emocionantes atrações que o farão se sentir parte de um conto de fadas ou de uma história em quadrinhos.",
+        "Atrações que Desafiam a Gravidade",
+        "Das emocionantes montanhas-russas às viagens emocionantes pelos mundos da literatura e da fantasia, Islands of Adventure oferece uma variedade de atrações que farão seu coração bater mais forte e sua imaginação correr solta. Prepare-se para voar com o Harry Potter em uma vassoura, lutar ao lado dos super-heróis da Marvel ou enfrentar dinossauros pré-históricos em uma ilha misteriosa.",
+        "Encontros com Criaturas Míticas e Personagens Favoritos",
+        "Além das emocionantes atrações, Islands of Adventure oferece a oportunidade única de encontrar criaturas mágicas e personagens amados dos contos de fadas e dos quadrinhos. Deixe-se encantar ao encontrar o Homem-Aranha balançando pelas ruas ou ao fazer amizade com um gigante simpático no Mundo Perdido.",
+        "Entretenimento que Encanta e Surpreende",
+        "Prepare-se para se maravilhar com os espetáculos emocionantes que Islands of Adventure tem a oferecer. De shows de acrobacias a espetáculos musicais, cada apresentação é uma celebração da imaginação e do talento que fazem deste parque temático um destino tão especial.",
+        "Dicas para uma Aventura Inesquecível",
+        "Quer aproveitar ao máximo sua visita a Islands of Adventure? Estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, encontrar os melhores lugares para assistir aos shows e muito mais, para garantir que sua experiência seja verdadeiramente épica.",
+        "Prepare-se para uma Aventura sem Limites!",
+        "Junte-se a nós enquanto exploramos juntos os reinos mágicos de Islands of Adventure. Prepare-se para se surpreender, se emocionar e se divertir enquanto descobrimos tudo o que este destino incrível tem a oferecer.",
+        "Venha conosco nesta jornada inesquecível por Islands of Adventure. Esteja preparado para se maravilhar, se emocionar e criar memórias que durarão para sempre em um dos destinos mais emocionantes do mundo dos parques temáticos."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Islands-of-Adventure.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Magic-Kingdom-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Busch-Gardens-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:27.865Z"
+    },
+    {
+      "type": "park",
+      "slug": "legoland",
+      "url": "https://www.roteirovip.com/legoland/",
+      "seo": {
+        "title": "Legoland",
+        "description": "Descubra as maravilhas dos blocos de construção mais famosos do mundo, mergulhe nas aventuras do Legoland.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Legoland.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Legoland"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Descubra o Mundo Mágico da Criatividade na Legoland: O Paraíso dos Construtores de Todas as Idades",
+        "Bem-vindos, entusiastas da diversão e da criatividade, a mais uma emocionante viagem pelo universo dos parques temáticos! Hoje, estamos prestes a mergulhar na magia e na imaginação da Legoland, um destino onde os sonhos ganham vida e a diversão é garantida para todas as idades.",
+        "Ao cruzar os portões da Legoland, você é transportado para um mundo onde os blocos de construção mais famosos do mundo são a chave para aventuras sem fim. De cidades em miniatura a paisagens épicas, cada canto deste parque temático é uma obra-prima de criatividade e engenhosidade.",
+        "Atrações Interativas e Emocionantes",
+        "Prepare-se para embarcar em uma jornada cheia de diversão e emoção com as incríveis atrações da Legoland. De montanhas-russas emocionantes a passeios tranquilos, há algo para todos os gostos e idades. Deixe sua imaginação voar enquanto você constrói, brinca e se diverte como nunca antes.",
+        "Experiências Criativas que Encantam",
+        "Além das atrações, a Legoland oferece uma variedade de experiências criativas que cativam e inspiram. De workshops de construção a exibições de esculturas feitas com LEGO, cada atividade é uma oportunidade para soltar a criatividade e explorar novos mundos de diversão.",
+        "Na Legoland, a diversão não tem idade. Com áreas especialmente projetadas para crianças pequenas e atrações emocionantes para os mais aventureiros, há algo para todos desfrutarem juntos em família. Deixe-se levar pela magia e pela alegria enquanto cria memórias que durarão para sempre.",
+        "Dicas e Truques para uma Visita Perfeita",
+        "Quer aproveitar ao máximo sua visita à Legoland? Não se preocupe, estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, encontrar as melhores atrações para a sua família e muito mais, para garantir que sua experiência seja verdadeiramente inesquecível.",
+        "Prepare-se para uma Aventura de Blocos!",
+        "Junte-se a nós enquanto exploramos juntos o mundo mágico da Legoland. Esteja preparado para se surpreender, se divertir e se maravilhar enquanto descobrimos tudo o que este destino incrível tem a oferecer.",
+        "Vamos Construir Memórias Inesquecíveis!",
+        "Venha conosco nesta jornada emocionante pela Legoland. Esteja pronto para deixar sua imaginação voar, seus sorrisos se multiplicarem e suas memórias se tornarem tão duradouras quanto um conjunto de LEGO."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Legoland.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Universal-Studios-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Animal-Kingdom-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:32.787Z"
+    },
+    {
+      "type": "park",
+      "slug": "magic-kingdom",
+      "url": "https://www.roteirovip.com/magic-kingdom/",
+      "seo": {
+        "title": "Magic Kingdom",
+        "description": "Magic Kingdom, onde a magia e a imaginação se encontram! Explore conosco o mundo encantado deste parque temático icônico da Disney.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Magic-Kingdom.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Magic Kingdom"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Descubra a Magia do Magic Kingdom: O Reino Encantado da Disney",
+        "Bem-vindos ao nosso blog, onde a magia e a aventura se encontram! Hoje, vamos mergulhar no mundo encantado do Magic Kingdom, o lugar onde os sonhos se tornam realidade e a diversão é garantida para toda a família.",
+        "Desvendando os Segredos do Magic Kingdom",
+        "Você sabia que por trás das portas do Magic Kingdom existe um mundo de maravilhas esperando para ser explorado? Descubra conosco como Walt Disney transformou sua visão em realidade, criando um lugar onde a magia ganha vida e os corações se enchem de alegria.",
+        "A cada esquina do Magic Kingdom, uma nova aventura espera por você! Venha conosco enquanto exploramos as seis terras temáticas que compõem este reino encantado, desde a emocionante Adventureland até a mágica Fantasyland, onde os contos de fadas se tornam realidade.",
+        "Prepare-se para embarcar em emocionantes jornadas pelas atrações do Magic Kingdom. De montanhas-russas cheias de adrenalina a viagens tranquilas pelos clássicos da Disney, há algo para todos os gostos e idades neste parque temático único.",
+        "Além das atrações, o Magic Kingdom oferece entretenimento espetacular que cativa e emociona os visitantes. De desfiles coloridos a shows emocionantes, cada momento é uma experiência memorável que você não vai querer perder.",
+        "Quer aproveitar ao máximo sua visita ao Magic Kingdom? Não se preocupe! Estamos aqui para compartilhar dicas e truques dos experts para garantir que sua experiência seja incrível, desde os melhores lugares para assistir aos fogos de artifício até os restaurantes que servem as delícias mais saborosas.",
+        "Antes de embarcar nesta emocionante jornada, certifique-se de estar preparado para tudo que o Magic Kingdom tem a oferecer. Encontre informações úteis sobre ingressos, horários de funcionamento e transporte para garantir uma visita tranquila e inesquecível.",
+        "Faça Memórias que Durarão para Sempre",
+        "No Magic Kingdom, cada momento é uma oportunidade para criar memórias que durarão para sempre. Deixe-se levar pela magia e pela emoção enquanto você se aventura neste reino encantado, onde a diversão é garantida e os sonhos se tornam realidade.",
+        "Pronto para Começar sua Jornada?",
+        "Junte-se a nós enquanto exploramos juntos o mundo mágico do Magic Kingdom. Prepare-se para uma jornada emocionante e inesquecível que certamente deixará uma marca em seu coração para sempre."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Magic-Kingdom.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Islands-of-Adventure-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:18.157Z"
+    },
+    {
+      "type": "park",
+      "slug": "seaworld",
+      "url": "https://www.roteirovip.com/seaworld/",
+      "seo": {
+        "title": "SeaWorld",
+        "description": "Explore as maravilhas do mundo marinho neste post emocionante sobre o SeaWorld. Descubra os mistérios dos oceanos.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-SeaWorld.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "SeaWorld"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        }
+      ],
+      "paragraphs": [
+        "Descubra o Mundo Maravilhoso do SeaWorld: Uma Aventura Aquática Inesquecível",
+        "Bem-vindos, amantes da vida marinha e da emoção, a mais uma emocionante viagem pelo mundo dos parques temáticos! Hoje, estamos prestes a mergulhar na magia e na maravilha do SeaWorld, um destino onde os oceanos ganham vida e a diversão é garantida para toda a família.",
+        "Ao cruzar os portões do SeaWorld, você é transportado para um mundo de beleza e mistério, onde os segredos dos oceanos aguardam para serem descobertos. De encontros emocionantes com animais marinhos a experiências educativas sobre a conservação marinha, cada momento neste parque temático é uma oportunidade para se encantar com a vida marinha e aprender sobre a importância de proteger nossos oceanos.",
+        "Atrações Aquáticas Emocionantes",
+        "Prepare-se para embarcar em uma jornada cheia de aventura e emoção com as incríveis atrações do SeaWorld. De montanhas-russas emocionantes a passeios aquáticos refrescantes, há algo para todos os gostos e idades. Deixe-se levar pelas ondas da Manta, desafie a velocidade do Kraken e maravilhe-se com a beleza dos golfinhos no Dolphin Cove.",
+        "Além das emocionantes atrações, o SeaWorld oferece uma variedade de espetáculos espetaculares que cativam e emocionam os visitantes. De shows com baleias orcas a apresentações com leões-marinhos e golfinhos, cada espetáculo é uma celebração da vida marinha e uma oportunidade para se maravilhar com as incríveis habilidades dos animais.",
+        "Compromisso com a Conservação Marinha",
+        "No SeaWorld, a conservação marinha é uma prioridade. Ao visitar o parque, os visitantes têm a oportunidade de aprender sobre os esforços de conservação do SeaWorld e como podem ajudar a proteger os oceanos e suas criaturas. Cada experiência no parque é uma oportunidade para fazer a diferença e inspirar a próxima geração de defensores da vida marinha.",
+        "Dicas e Truques para uma Visita Inesquecível",
+        "Quer aproveitar ao máximo sua visita ao SeaWorld? Não se preocupe, estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, encontrar os melhores lugares para assistir aos espetáculos e muito mais, para garantir que sua experiência seja verdadeiramente inesquecível.",
+        "Prepare-se para uma Aventura Aquática!",
+        "Junte-se a nós enquanto exploramos juntos o mundo maravilhoso do SeaWorld. Esteja preparado para se surpreender, se emocionar e se divertir enquanto descobrimos tudo o que este destino incrível tem a oferecer.",
+        "Vamos Embarcar Nesta Jornada Aquática!",
+        "Venha conosco nesta emocionante jornada pelo SeaWorld. Esteja pronto para deixar sua imaginação mergulhar nas profundezas do oceano, seus sorrisos se multiplicarem com cada nova descoberta e suas memórias se tornarem tão duradouras quanto as ondas do mar."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-SeaWorld.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Universal-Studios-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Animal-Kingdom-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:35.348Z"
+    },
+    {
+      "type": "park",
+      "slug": "universal-orlando",
+      "url": "https://www.roteirovip.com/universal-orlando/",
+      "seo": {
+        "title": "Universal Orlando",
+        "description": "Explore a emoção e a diversão sem limites na Universal Orlando neste post envolvente. Descubra os segredos das atrações emocionantes.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Universal-Studios.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Universal Orlando"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        },
+        {
+          "tag": "h3",
+          "text": "Leave a comment Cancelar resposta"
+        }
+      ],
+      "paragraphs": [
+        "Descubra a Magia e a Emoção na Universal Orlando: O Destino dos Sonhos dos Amantes de Parques Temáticos",
+        "Bem-vindos, aventureiros e amantes da diversão, a mais uma emocionante viagem pelo mundo dos parques temáticos! Hoje, estamos prestes a mergulhar na experiência única que é a Universal Orlando, um destino onde a magia, a emoção e a adrenalina se encontram para criar memórias inesquecíveis.",
+        "Explorando os Dois Parques Incríveis",
+        "Ao adentrar os portões da Universal Orlando, você se encontra diante de duas portas de entrada para a diversão sem limites: o Universal Studios Florida e o Islands of Adventure. Prepare-se para embarcar em uma jornada pelos mundos do cinema, da fantasia e da aventura, onde cada esquina reserva uma surpresa emocionante.",
+        "Atrações que Desafiam a Imaginação",
+        "Dos emocionantes passeios baseados em filmes icônicos a experiências interativas que o transportam para outros mundos, a Universal Orlando oferece uma variedade de atrações que desafiam a sua imaginação e elevam a sua adrenalina. Seja voando com o Harry Potter em uma vassoura em busca de aventuras ou enfrentando dinossauros pré-históricos em uma ilha misteriosa, há algo para todos os gostos e idades.",
+        "Encontros Memoráveis com Personagens Favoritos",
+        "Além das atrações emocionantes, a Universal Orlando oferece a oportunidade única de encontrar seus personagens favoritos da Universal, desde os Minions até os super-heróis da Marvel. Tire fotos, obtenha autógrafos e crie momentos mágicos com os personagens que você ama.",
+        "Entretenimento de Classe Mundial",
+        "Prepare-se para se maravilhar com os shows espetaculares que a Universal Orlando tem a oferecer. De desfiles coloridos a espetáculos teatrais emocionantes, cada apresentação é uma celebração da criatividade e do talento que fazem deste destino um dos mais emocionantes do mundo.",
+        "Quer aproveitar ao máximo sua visita à Universal Orlando? Estamos aqui para ajudar! Descubra nossas dicas e truques para evitar filas, encontrar os melhores lugares para assistir aos shows e muito mais, para garantir que sua experiência seja verdadeiramente mágica.",
+        "Pronto para uma Aventura Inesquecível?",
+        "Junte-se a nós enquanto exploramos juntos a Universal Orlando. Prepare-se para se surpreender, se divertir e criar memórias que durarão para sempre em um dos destinos mais emocionantes do mundo dos parques temáticos.",
+        "Venha conosco nesta incrível jornada pela Universal Orlando. Prepare-se para se emocionar, se maravilhar e se divertir enquanto exploramos juntos tudo o que este destino incrível tem a oferecer."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Universal-Studios.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-SeaWorld-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/05/Banner-Busch-Gardens-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:25.453Z"
+    }
+  ],
+  "posts": [
+    {
+      "type": "blog-post",
+      "slug": "cidades-onde-o-dia-e-mais-longo-no-verao-estadunidense",
+      "url": "https://www.roteirovip.com/cidades-onde-o-dia-e-mais-longo-no-verao-estadunidense/",
+      "seo": {
+        "title": "Cidades onde o dia é mais longo no verão estadunidense",
+        "description": "",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Capa.webp"
+      },
+      "title": "Cidades onde o dia é mais longo no verão estadunidense",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Cidades onde o dia é mais longo no verão estadunidense"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        },
+        {
+          "tag": "h3",
+          "text": "Leave a comment Cancelar resposta"
+        }
+      ],
+      "paragraphs": [
+        "Durante o verão é comum que o dia dure mais tempo em relação às estações mais amenas. Isso se dá, por causa da rotação do Sol estar mais inclinada para a Terra durante alguns meses do ano. E por isso, alguns municípios nos Estados Unidos prolongam ainda mais o momento do entardecer. Pra você ter ideia, num dia comum de verão é comum ter mais de 15 horas de sol. Separamos algumas cidades, onde o anoitecer ultrapassa as 8 e 9 horas da noite.",
+        "Aberdeen (Washington) O estado de Washington é conhecido por ter climas mais amenos em relação ao litoral no sul norte-americano. No entanto, a cidade de Aberdeen tem uma posição privilegiada por ter quase 16 horas de sol durante o dia. Já no outono, o entardecer acontece aproximadamente às 9:30pm com diversos pôr do sol que são lindos e atraem muitos turistas.",
+        "Petersburg (Alaska) O Alaska está localizado na parte extrema do hemisfério norte da Terra, por estar em uma região próxima ao Ártico, as noites demoram para chegar no verão. Em compensação, o inverno dura mais nessas regiões. Aqui, o anoitecer acontece só às 10 horas da noite, com temperaturas elevadas de 25ºC, um verão muito mais ameno em relação ao resto do país. Se você curte um verão com dia muito longo, sem precisar vivenciar o calor intenso, é o lugar ideal para você programar a sua viagem perfeita nos próximos meses.",
+        "New York (New York) Em relação ao inverno, a cidade de New York tem um verão de aproximadamente quatro horas a mais de luz para animar os estadunidenses. Quando bate às 8 e meia da noite, ainda está muito claro e às 9 horas o sol vai se pondo aos poucos. É um momento muito animado para os moradores que vivenciam um dos melhores pôr do sol de todo mundo! Diariamente é um espetáculo com as cores lindíssimas que se formam no céu. New York sem dúvidas é uma das cidades mais famosas dos Estados Unidos e também é referência para aproveitar o verão da melhor maneira possível, com o fuso horário ao seu favor. Por isso, aproveite as férias!",
+        "Boston (Massachusetts) É uma das cidades mais populosas dos Estados Unidos, muito frequentada por estudantes que residem nas melhores universidades do estado. Boston sempre fica cheia e é um dos lugares mais incríveis para aproveitar o verão. O entardecer no final de outono já ultrapassa as 8 horas da noite e se estende ainda mais quando o verão está no auge. Além disso, o clima mais ameno fica em torno dos 25 e 30º graus sem aquele sol escaldante. Muitas pessoas aproveitam para passar o dia nos parques para fazer piqueniques e curtir o lindo dia de sol em Boston.",
+        "San Francisco (Califórnia) 20:30 Próxima ao Oceano Pacífico e banhada pela Baía de San Francisco, é uma das cidades que atraem mais turistas à Califórnia. Quem gosta de curtir uma boa praia, é uma opção incrível e perfeita para aproveitar o verão! O anoitecer acontece a partir das 8 e meia da noite e possui um dos melhores entardecer de todo estado. Além de ser uma cidade turística, San Francisco é também conhecida por seus bondes que duram o ano inteiro, pelos passeios históricos proporcionados pela cidade. É um dos melhores roteiros para se realizar nos próximos meses.",
+        "Gostou das dicas? O verão está chegando e a chance de aproveitar as melhores cidades com os dias mais longos é agora. Viva esses momentos e registre nas redes sociais os horários noturnos em que o sol ainda está aparecendo forte no céu. Aproveite a dica e até mais!"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Capa.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Aberdeen-Washington--1024x576.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Petersburg-Alaska-1024x683.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/New-York-1024x597.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Boston-Massachusetts--1024x683.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/San-Francisco-California-1024x576.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Atlanta-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__180611163459012-one-world-observatory-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:45.326Z"
+    },
+    {
+      "type": "blog-post",
+      "slug": "o-que-fazer-para-curtir-a-melhor-noite-em-beverly-hills",
+      "url": "https://www.roteirovip.com/o-que-fazer-para-curtir-a-melhor-noite-em-beverly-hills/",
+      "seo": {
+        "title": "O que fazer para curtir a melhor noite em Beverly Hills",
+        "description": "",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Beverly-Hills.webp"
+      },
+      "title": "O que fazer para curtir a melhor noite em Beverly Hills",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "O que fazer para curtir a melhor noite em Beverly Hills"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        },
+        {
+          "tag": "h3",
+          "text": "Leave a comment Cancelar resposta"
+        }
+      ],
+      "paragraphs": [
+        "Beverly Hills é uma das cidades mais luxuosas do condado de Los Angeles, do estado da Califórnia, dos Estados Unidos e também do mundo. É referência mundial para as marcas de grife, celebridades, popularidade, sofisticação e quase todas as estrelas de Hollywood estão presentes neste município. O que fazer à noite para ter momentos inesquecíveis que serão guardados para sempre na sua memória? Confira a lista dos melhores lugares para aproveitar.",
+        "Rodeo Drive Indicamos as ruas paralelas à Rodeo Drive para o início da sua noite glamurosa, para fazer as compras tão famosas em Beverly Hills. Visite as melhores lojas de grife, tais como: Nordstrom, Abercrombie & Fitch, Victoria’s Secrets, Gap, Michael Kors, Nike, Bath & Body Works, Levi’s e Pottery Barn. É um passeio obrigatório e deve ser iniciado no final da tarde e início da noite, para que o seu roteiro faça sentido.",
+        "The Spare Room É muito comum que alguns bares e baladas aconteçam dentro de hoteis. Praticamente um chamariz, a popularidade desse passeio é tamanha e é um dos melhores lugares para se aproveitar. Dentro do Hollywood Roosevelt Hotel está o The Spare Room, um espaço ótimo para desconstrair com seus amigos. Com duas pistas de boliche, mesas de xadrez e jogos de carta, é perfeito para quem adora passar o tempo praticando algum esporte ou atividade de estratégia. O salão de jogos e o Lounge possui o melhor bar com os melhores drinks e petiscos de Beverly Hills. Diversas celebridades da indústria artística frequentam este lugar. E lembrando que para entrar é necessário fazer uma reserva. Portanto, é um programa para poucos.",
+        "Endereço: 7000 Hollywood Boulevard, Los Angeles, CA, Estados Unidos",
+        "Crustacean Restaurant A região de Los Angeles possui um dos melhores restaurantes de frutos do mar. O estado da Califórnia adota como referência essa culinária e o Crustacean Restaurant é um dos mais conhecidos de Beverly Hills. Com mais de dois andares, música ao vivo, decoração clássica e com uma adega espetacular, é o estabelecimento perfeito para aproveitar a noite em um ótimo jantar sofisticado. Além disso, muitas celebridades também frequentam o restaurante, principalmente pelo nome e legado durante os anos na região.",
+        "Endereço: 9646 S Santa Monica Boulevard, Los Angeles.",
+        "Largo at the Coronet A fama combina com Beverly Hills. E no Largo at the Coronet é um dos melhores lugares para quem curte stand up comedy. As diversas apresentações ao vivo com os melhores e maiores comediantes de Los Angeles, é a atração perfeita para animar a sua noite. A agenda de shows é muito disputada, por ser uma referência aos principais humoristas norte-americanos. Todas as noites ocorrem diversos shows que atraem muitos moradores e turistas à cidade. Preste atenção no calendário e se divirta com os melhores nomes da comédia.",
+        "Endereço: 366 N La Cienega Blvd, Los Angeles, CA 90048, Estados Unidos.",
+        "Enquanto você curte a noite, você pode aproveitar e olhar algumas das mais de 2000 estrelas da calçada da fama que estão espalhadas por toda Los Angeles e muitas na própria Beverly Hills. É sem dúvidas um roteiro incrível para quem deseja conhecer os Estados Unidos e é o passeio perfeito para quem é fã da indústria cultural norte-americana. Principalmente por ter um dos ambientes nos filmes e séries mais famosos de todo o mundo. Diversas gravações foram realizadas aos arredores e aos fanáticos, reconheçam logo de cara. Conheça essa cidade e se encante com o poder de Beverly Hills!"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Beverly-Hills.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Rodeo-Drive.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/The-Spare-Room-1024x576.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Crustacean-Restaurant-1024x577.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Largo-at-the-Coronet.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__180611163459012-one-world-observatory-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Capa-2-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:40.269Z"
+    },
+    {
+      "type": "blog-post",
+      "slug": "parques-em-atlanta-para-aproveitar-um-otimo-dia",
+      "url": "https://www.roteirovip.com/parques-em-atlanta-para-aproveitar-um-otimo-dia/",
+      "seo": {
+        "title": "Parques em Atlanta para aproveitar um ótimo dia",
+        "description": "",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Atlanta.webp"
+      },
+      "title": "Parques em Atlanta para aproveitar um ótimo dia",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Parques em Atlanta para aproveitar um ótimo dia"
+        },
+        {
+          "tag": "h2",
+          "text": "Navegação de Post"
+        },
+        {
+          "tag": "h3",
+          "text": "You May Also Like"
+        },
+        {
+          "tag": "h3",
+          "text": "Leave a comment Cancelar resposta"
+        }
+      ],
+      "paragraphs": [
+        "Você sabia que a cidade de Atlanta possui mais de 340 parques? Um dos lugares mais populares dos Estados Unidos, tem muitos parques espalhados que ao todo são mais de 35km de espaço. Nesses lugares, há muitas atividades para se praticar com a família e os amigos. Desde espaços para curtir a natureza, até mesmo playgrounds para fazer exercícios. Sem dúvidas, é um dos passeios que podem ser realizados por toda a população e também aos turistas que desejam conhecer um pouco de Atlanta.",
+        "Centennial Olympic Park Impossível falar de parque em Atlanta sem lembrar do maior evento que a cidade já sediou. Os Jogos Olímpicos de Atlanta foram uma das edições mais memoráveis das últimas edições e até hoje é lembrado com carinho pelos norte-americanos. É um espaço de 85 000 m², localizado no Centro da cidade e pode ser dedicado a concertos ao ar livre ou até mesmo para piqueniques, passeios simples e atividades esportivas. Muitos festivais de música, comemorações da cidade e encontros nos feriados acontecem pela popularidade do parque.",
+        "Parque Estadual Sweetwater Creek Para quem deseja fugir um pouco do movimento da cidade, a cerca de meia hora de carro do centro de Atlanta está um ótimo parque. O Sweetwater Creek possui mais de 10 mil km² com diversas árvores e trilhas espetaculares. Ambiente perfeito para fazer caminhadas, montar acampamentos com áreas de piquenique e praticar a pesca. E nesse parque, também há vestígios de uma velha fábrica de tecidos que pegou fogo durante a Guerra Civil. Incrível, né?",
+        "Grant Park É o parque municipal mais antigo de Atlanta e é considerado uma joia no histórico Eastside, próximo a Midtown Atlanta e Downtown Atlanta. Com quadras de tênis, playground, lagoa e um mercado de fazendeiros é um dos lugares mais tradicionais para aproveitar o dia com a família. É recomendado fazer piqueniques e viver a natureza num ambiente histórico onde a natureza predomina.",
+        "Piedmont Park Localizado na Midtown de Atlanta, é um parque urbano com diversas opções de lazer e serviço. Aqui possui uma pista de corrida para cães, horta comunitária e playgrounds para todos os tipos de públicos. O ideal é ter um programa bem em família para levar as crianças e os animais de estimação. Há também um splash pad ótimo para animar a criançada, mas tenha roupas reservas porque a atração molha bastante! O mais interessante é a diversidade de atividades e público que o Piedmont Park proporciona à cidade.",
+        "Chattahoochee River National Recreation Area A floresta exuberante próxima ao rio da região é um ambiente espetacular. Comece bem o seu dia, programando para um belo passeio de rafting com seus amigos. Se você curte pescar, também é um lugar perfeito. Aqui tem muitas trutas arco-íris, espécie de peixe bastante popular nos países da América do Norte e nativos das águas doces. Próximo às margens do rio, quem gosta de caminhar pode se aventurar em várias trilhas que são bem interessantes e nada perigosas.",
+        "Espero que você tenha gostado de alguma das nossas dicas e aproveite o seu final de semana de um modo bastante tranquilo e conectado com a natureza. Faça do seu dia um ótimo lugar para viver o verde. O verão está chegando e é hora de aproveitar as altas temperaturas para os passeios ao ar livre e também nos rios para se refrescar."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Atlanta.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Centennial-Olympic-Park-1024x683.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Parque-Estadual-Sweetwater-Creek-1024x768.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Grant-Park-1024x768.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Piedmont-Park-1024x575.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chattahoochee-River-National-Recreation-Area.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__Capa-2-810x500.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/AnyConv.com__180611163459012-one-world-observatory-810x500.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:10:42.852Z"
+    }
+  ],
+  "pages": [
+    {
+      "type": "page",
+      "slug": "contato",
+      "url": "https://www.roteirovip.com/contato",
+      "seo": {
+        "title": "Contato",
+        "description": "Entre em contato conosco para iniciar sua jornada inesquecível. Nossa equipe está pronta para ajudar com qualquer dúvida que você tenha.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Disney-banner.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Contato"
+        },
+        {
+          "tag": "h2",
+          "text": "Deixe um recado"
+        },
+        {
+          "tag": "h3",
+          "text": "Comece sua Jornada Ainda Hoje!"
+        }
+      ],
+      "paragraphs": [
+        "5401 S Kirkman Rd Suite 210 Orlando, FL EUA"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:09:56.527Z"
+    },
+    {
+      "type": "page",
+      "slug": "home",
+      "url": "https://www.roteirovip.com/",
+      "seo": {
+        "title": "Roteiro VIP - Seu Roteiro Personalizado",
+        "description": "Descubra o melhor de Orlando e seus incríveis parques temáticos com a Roteiro VIP. Reserve sua viagem e embarque em uma jornada única!",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-alege-universal-qmidbc3822xkhlh3cygy7prowkp86nf4rpai2z9y4g.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Sobre Nós"
+        },
+        {
+          "tag": "h2",
+          "text": "Destaques da viagem"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu orçamento hoje!"
+        },
+        {
+          "tag": "h2",
+          "text": "Nossos serviços"
+        },
+        {
+          "tag": "h2",
+          "text": "Nosso Blog"
+        },
+        {
+          "tag": "h3",
+          "text": "Magic Kingdom"
+        },
+        {
+          "tag": "h3",
+          "text": "Animal Kingdom"
+        },
+        {
+          "tag": "h3",
+          "text": "Hollywood Studios"
+        },
+        {
+          "tag": "h3",
+          "text": "Universal"
+        },
+        {
+          "tag": "h3",
+          "text": "Islands of Adventure"
+        },
+        {
+          "tag": "h3",
+          "text": "Busch Gardens"
+        },
+        {
+          "tag": "h3",
+          "text": "LegoLand"
+        },
+        {
+          "tag": "h3",
+          "text": "SeaWorld"
+        },
+        {
+          "tag": "h3",
+          "text": "Epcot"
+        }
+      ],
+      "paragraphs": [
+        "A Roteiro VIP é uma agência especializada em planejamento e organização de viagens para parques temáticos em Orlando. Nossa missão é proporcionar serviços personalizados, garantindo uma experiência única e sem complicações para nossos clientes durante sua visita aos parques.",
+        "Uma experiência que não apenas marca, mas também transforma sua jornada em algo verdadeiramente inesquecível.",
+        "Descubra uma jornada sem preocupações pelos parques temáticos de Orlando com a Roteiro VIP. Solicite seu orçamento hoje e deixe-nos transformar seus sonhos em realidade!",
+        "AMEI o serviço e vou indicar sempre para todos que me perguntarem. Todas as fotos ficaram incríveis.",
+        "As melhores fotos da viagem foram com vocês. Obrigado!",
+        "Fiz o enxoval da minha primeira bebê em Orlando e amei. Todas as dicas, detalhes e cupons ajudaram muito. Indico muito o serviço da assessoria deles.",
+        "O serviço da vip facilitou muito as nossas visitas nos parques com o agendamento de fastpass e todas as dicas."
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando-1024x228.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-alege-universal-qmidbc3822xkhlh3cygy7prowkp86nf4rpaicwi5ps.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-mickey-qmidypco4nqw4iviplpr5mjpetspi3d8oqkfqtxojw.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-disney-qmidymj5k5n15ozm62hvg59bmo6lv021oclzb01v2k.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Disney-World-1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Animal-Kingdom.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Hollywood-Studios.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Universal-Studios-1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Islands-of-Adventures.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Bush-Gardens.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Legoland-1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/SeaWorld-1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros1.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/passaros2.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Garoto-disney-1024x683.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2024/04/Garota-loira-disney.webp",
+          "alt": ""
+        },
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:09:50.092Z"
+    },
+    {
+      "type": "page",
+      "slug": "orcamento",
+      "url": "https://www.roteirovip.com/orcamento/",
+      "seo": {
+        "title": "Orçamento",
+        "description": "Quer transformar seus sonhos de viagem em realidade? Solicite seu orçamento personalizado hoje mesmo! Estamos prontos para lhe atender.",
+        "ogImage": "https://www.roteirovip.com/wp-content/uploads/2024/04/Disney-banner.webp"
+      },
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Orçamento"
+        },
+        {
+          "tag": "h2",
+          "text": "Faça seu Orçamento"
+        }
+      ],
+      "paragraphs": [
+        "Passagem Aérea Comprada? Sim Não",
+        "Possui Passaporte? Sim Não Em Andamento",
+        "Possui Visto? Sim Não Em Andamento"
+      ],
+      "images": [
+        {
+          "src": "https://www.roteirovip.com/wp-content/uploads/2019/11/Logo-Roteiro-VIP-Orlando.webp",
+          "alt": ""
+        }
+      ],
+      "crawledAt": "2026-03-23T00:09:52.547Z"
+    }
+  ]
+}

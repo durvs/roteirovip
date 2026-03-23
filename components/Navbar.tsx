@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { label: "Roteiro Personalizado", href: "/services/roteiro-personalizado" },
@@ -40,23 +41,18 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <div
-                className={`w-8 h-8 transition-colors duration-300 ${
-                  scrolled ? "text-black" : "text-white"
-                }`}
-              >
-                <svg viewBox="0 0 32 32" fill="currentColor">
-                  <polygon points="16,2 30,28 2,28" />
-                </svg>
+            <Link href="/" className="flex items-center group">
+              <div className="relative h-10 w-44">
+                <Image
+                  src="/logo.webp"
+                  alt="Roteiro VIP"
+                  fill
+                  className={`object-contain object-left transition-all duration-500 ${
+                    scrolled ? "" : "brightness-0 invert"
+                  }`}
+                  priority
+                />
               </div>
-              <span
-                className={`font-[Montserrat] font-black text-lg tracking-[0.15em] uppercase transition-colors duration-300 ${
-                  scrolled ? "text-black" : "text-white"
-                }`}
-              >
-                ROTEIRO VIP
-              </span>
             </Link>
 
             {/* Desktop Nav */}
@@ -65,7 +61,7 @@ export default function Navbar() {
                 <Link
                   key={item}
                   href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className={`font-[Montserrat] font-600 text-sm tracking-wide transition-colors duration-300 hover:text-[#c9a84c] ${
+                  className={`font-heading font-600 text-sm tracking-wide transition-colors duration-300 hover:text-[#c9a84c] ${
                     scrolled ? "text-black" : "text-white"
                   }`}
                 >
@@ -80,7 +76,7 @@ export default function Navbar() {
                 onMouseLeave={() => setServicesOpen(false)}
               >
                 <button
-                  className={`flex items-center gap-1 font-[Montserrat] font-semibold text-sm tracking-wide transition-colors duration-300 hover:text-[#c9a84c] ${
+                  className={`flex items-center gap-1 font-heading font-semibold text-sm tracking-wide transition-colors duration-300 hover:text-[#c9a84c] ${
                     scrolled ? "text-black" : "text-white"
                   }`}
                 >
@@ -105,7 +101,7 @@ export default function Navbar() {
                         <Link
                           key={s.href}
                           href={s.href}
-                          className="block px-5 py-3 text-sm font-[Montserrat] font-medium text-black hover:bg-black hover:text-white transition-colors border-b border-gray-50 last:border-0"
+                          className="block px-5 py-3 text-sm font-heading font-medium text-black hover:bg-black hover:text-white transition-colors border-b border-gray-50 last:border-0"
                         >
                           {s.label}
                         </Link>
@@ -120,7 +116,7 @@ export default function Navbar() {
             <div className="hidden lg:block">
               <Link
                 href="/orcamento"
-                className="inline-flex items-center gap-2 bg-black text-white font-[Montserrat] font-bold text-sm tracking-wider px-6 py-3 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-black text-white font-heading font-bold text-sm tracking-wider px-6 py-3 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
               >
                 Faça seu Orçamento
               </Link>
@@ -159,7 +155,7 @@ export default function Navbar() {
                   <Link
                     href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                     onClick={() => setMobileOpen(false)}
-                    className="text-white font-[Montserrat] font-bold text-2xl"
+                    className="text-white font-heading font-bold text-2xl"
                   >
                     {item}
                   </Link>
@@ -171,7 +167,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.24 }}
               >
-                <p className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-widest mb-3">
+                <p className="text-[#c9a84c] font-heading font-bold text-sm tracking-widest mb-3">
                   SERVIÇOS
                 </p>
                 {services.map((s, i) => (
@@ -179,7 +175,7 @@ export default function Navbar() {
                     key={s.href}
                     href={s.href}
                     onClick={() => setMobileOpen(false)}
-                    className="block text-white/70 font-[Montserrat] font-medium text-lg py-1.5 hover:text-white transition-colors"
+                    className="block text-white/70 font-heading font-medium text-lg py-1.5 hover:text-white transition-colors"
                   >
                     {s.label}
                   </Link>
@@ -195,7 +191,7 @@ export default function Navbar() {
                 <Link
                   href="/orcamento"
                   onClick={() => setMobileOpen(false)}
-                  className="inline-block bg-[#c9a84c] text-black font-[Montserrat] font-bold tracking-wider px-8 py-4 text-lg"
+                  className="inline-block bg-[#c9a84c] text-black font-heading font-bold tracking-wider px-8 py-4 text-lg"
                 >
                   Faça seu Orçamento
                 </Link>

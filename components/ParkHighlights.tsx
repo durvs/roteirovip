@@ -38,7 +38,7 @@ export default function ParkHighlights() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <motion.p
-              className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-4"
+              className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
@@ -46,7 +46,7 @@ export default function ParkHighlights() {
               Experiências
             </motion.p>
             <motion.h2
-              className="font-[Montserrat] font-black leading-tight text-black"
+              className="font-heading font-black leading-tight text-black"
               style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -119,7 +119,7 @@ export default function ParkHighlights() {
                 {/* Park name */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="w-8 h-0.5 bg-[#c9a84c] mb-3 group-hover:w-12 transition-all duration-500" />
-                  <h3 className="text-white font-[Montserrat] font-black text-xl leading-tight">
+                  <h3 className="text-white font-heading font-black text-xl leading-tight">
                     {park.name}
                   </h3>
                 </div>

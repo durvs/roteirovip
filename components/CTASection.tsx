@@ -53,7 +53,7 @@ export default function CTASection() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           >
             <motion.p
-              className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-6"
+              className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-6"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
@@ -62,7 +62,7 @@ export default function CTASection() {
             </motion.p>
 
             <motion.h2
-              className="text-white font-[Montserrat] font-black leading-tight mb-6"
+              className="text-white font-heading font-black leading-tight mb-6"
               style={{ fontSize: "clamp(2.2rem, 5vw, 3.8rem)" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -97,7 +97,7 @@ export default function CTASection() {
             >
               <Link
                 href="/orcamento"
-                className="inline-flex items-center gap-3 bg-[#c9a84c] text-black font-[Montserrat] font-bold tracking-wider px-10 py-5 hover:bg-white hover:text-black transition-all duration-300 text-sm group"
+                className="inline-flex items-center gap-3 bg-[#c9a84c] text-black font-heading font-bold tracking-wider px-10 py-5 hover:bg-white hover:text-black transition-all duration-300 text-sm group"
               >
                 Faça seu Orçamento
                 <span className="transform group-hover:translate-x-1 transition-transform">→</span>
@@ -117,8 +117,8 @@ export default function CTASection() {
                 { value: "VIP", label: "Experiência" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="text-white font-[Montserrat] font-black text-2xl">{stat.value}</p>
-                  <p className="text-white/60 font-[Montserrat] text-xs tracking-wider mt-1 uppercase">{stat.label}</p>
+                  <p className="text-white font-heading font-black text-2xl">{stat.value}</p>
+                  <p className="text-white/60 font-heading text-xs tracking-wider mt-1 uppercase">{stat.label}</p>
                 </div>
               ))}
             </motion.div>

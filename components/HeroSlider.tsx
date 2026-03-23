@@ -109,7 +109,7 @@ export default function HeroSlider() {
             />
 
             <h1
-              className="text-white font-[Montserrat] font-black leading-[1.05] mb-6"
+              className="text-white font-heading font-black leading-[1.05] mb-6"
               style={{
                 fontSize: "clamp(2.5rem, 6vw, 5rem)",
                 whiteSpace: "pre-line",
@@ -124,7 +124,7 @@ export default function HeroSlider() {
 
             <Link
               href="/orcamento"
-              className="inline-flex items-center gap-3 bg-white text-black font-[Montserrat] font-bold tracking-wider px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300 group text-sm"
+              className="inline-flex items-center gap-3 bg-white text-black font-heading font-bold tracking-wider px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300 group text-sm"
             >
               Faça seu Orçamento
               <span className="w-0 overflow-hidden group-hover:w-6 transition-all duration-300">→</span>
@@ -141,7 +141,7 @@ export default function HeroSlider() {
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className={`flex-1 py-4 font-[Montserrat] font-bold text-xs lg:text-sm tracking-widest uppercase transition-all duration-300 ${
+                className={`flex-1 py-4 font-heading font-bold text-xs lg:text-sm tracking-widest uppercase transition-all duration-300 ${
                   i === current
                     ? "bg-[#c9a84c] text-black"
                     : "bg-black/60 text-white/70 hover:bg-black/80 hover:text-white"

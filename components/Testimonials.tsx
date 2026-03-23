@@ -110,11 +110,11 @@ export default function Testimonials() {
           transition={{ duration: 0.7 }}
           className="mb-16"
         >
-          <p className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4">
             O que dizem
           </p>
           <h2
-            className="text-white font-[Montserrat] font-black leading-tight"
+            className="text-white font-heading font-black leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
           >
             Depoimentos
@@ -163,10 +163,10 @@ export default function Testimonials() {
             {/* Author */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-12 h-px bg-[#c9a84c]" />
-              <p className="text-white font-[Montserrat] font-bold text-lg mt-2">
+              <p className="text-white font-heading font-bold text-lg mt-2">
                 {testimonials[current].name}
               </p>
-              <p className="text-[#c9a84c] font-[Montserrat] text-sm tracking-wider uppercase">
+              <p className="text-[#c9a84c] font-heading text-sm tracking-wider uppercase">
                 {testimonials[current].service}
               </p>
             </div>

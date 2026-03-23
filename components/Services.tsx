@@ -64,7 +64,7 @@ export default function Services() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <motion.p
-              className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-4"
+              className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
@@ -72,7 +72,7 @@ export default function Services() {
               O que oferecemos
             </motion.p>
             <motion.h2
-              className="font-[Montserrat] font-black leading-tight text-black"
+              className="font-heading font-black leading-tight text-black"
               style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -132,7 +132,7 @@ export default function Services() {
 
                 {/* Number */}
                 <div className="absolute top-5 right-5 w-10 h-10 border border-white/30 flex items-center justify-center">
-                  <span className="text-white/70 font-[Montserrat] font-bold text-xs">
+                  <span className="text-white/70 font-heading font-bold text-xs">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -140,13 +140,13 @@ export default function Services() {
 
               {/* Card content */}
               <div className="bg-[#f8f7f5] p-6 border-b-2 border-transparent group-hover:border-[#c9a84c] transition-colors duration-300">
-                <h3 className="text-black font-[Montserrat] font-black text-xl mb-2">
+                <h3 className="text-black font-heading font-black text-xl mb-2">
                   {service.name}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <div className="flex items-center gap-2 text-[#c9a84c] font-[Montserrat] font-bold text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-[#c9a84c] font-heading font-bold text-sm group-hover:gap-3 transition-all">
                   Saiba mais
                   <ArrowRight size={14} />
                 </div>

@@ -44,7 +44,7 @@ export default function Blog() {
           {/* Content */}
           <div>
             <motion.p
-              className="text-[#c9a84c] font-[Montserrat] font-bold text-sm tracking-[0.3em] uppercase mb-4"
+              className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
@@ -53,7 +53,7 @@ export default function Blog() {
             </motion.p>
 
             <motion.h2
-              className="font-[Montserrat] font-black leading-tight text-black mb-12"
+              className="font-heading font-black leading-tight text-black mb-12"
               style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -75,7 +75,7 @@ export default function Blog() {
                     className="block py-6 border-b border-gray-200 group hover:border-[#c9a84c] transition-colors"
                   >
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[#c9a84c] font-[Montserrat] font-bold text-xs tracking-wider uppercase">
+                      <span className="text-[#c9a84c] font-heading font-bold text-xs tracking-wider uppercase">
                         {post.category}
                       </span>
                       <span className="text-gray-300">·</span>
@@ -86,7 +86,7 @@ export default function Blog() {
                     </div>
 
                     <div className="flex items-center justify-between gap-4">
-                      <h3 className="text-black font-[Montserrat] font-bold text-lg leading-snug group-hover:text-[#c9a84c] transition-colors">
+                      <h3 className="text-black font-heading font-bold text-lg leading-snug group-hover:text-[#c9a84c] transition-colors">
                         {post.title}
                       </h3>
                       <ArrowRight
@@ -107,7 +107,7 @@ export default function Blog() {
             >
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-3 bg-black text-white font-[Montserrat] font-bold tracking-wider px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300 text-sm group"
+                className="inline-flex items-center gap-3 bg-black text-white font-heading font-bold tracking-wider px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300 text-sm group"
               >
                 Visitar Blog
                 <ArrowRight

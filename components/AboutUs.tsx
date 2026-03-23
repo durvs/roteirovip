@@ -50,7 +50,7 @@ export default function AboutUs() {
             {/* Giant heading */}
             <div className="overflow-hidden mb-8">
               <motion.h2
-                className="font-[Montserrat] font-black leading-none tracking-tight text-black"
+                className="font-heading font-black leading-none tracking-tight text-black"
                 style={{ fontSize: "clamp(4rem, 10vw, 9rem)" }}
                 initial={{ y: "100%" }}
                 animate={isInView ? { y: 0 } : {}}
@@ -99,7 +99,7 @@ export default function AboutUs() {
                   >
                     <Link
                       href={park.href}
-                      className="text-[#1a2744] font-[Montserrat] font-bold text-sm hover:text-[#c9a84c] transition-colors inline-flex items-center gap-1.5 group"
+                      className="text-[#1a2744] font-heading font-bold text-sm hover:text-[#c9a84c] transition-colors inline-flex items-center gap-1.5 group"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-[#c9a84c] group-hover:scale-150 transition-transform" />
                       {park.name}
@@ -116,7 +116,7 @@ export default function AboutUs() {
             >
               <Link
                 href="/orcamento"
-                className="inline-block bg-black text-white font-[Montserrat] font-bold text-sm tracking-widest px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
+                className="inline-block bg-black text-white font-heading font-bold text-sm tracking-widest px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
               >
                 Faça seu Orçamento
               </Link>
@@ -168,9 +168,9 @@ export default function AboutUs() {
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <p className="font-[Montserrat] font-black text-3xl leading-none">9+</p>
-              <p className="font-[Montserrat] font-bold text-xs tracking-wider mt-1">PARQUES</p>
-              <p className="font-[Montserrat] text-xs opacity-80">em Orlando</p>
+              <p className="font-heading font-black text-3xl leading-none">9+</p>
+              <p className="font-heading font-bold text-xs tracking-wider mt-1">PARQUES</p>
+              <p className="font-heading text-xs opacity-80">em Orlando</p>
             </motion.div>
           </motion.div>
         </div>
