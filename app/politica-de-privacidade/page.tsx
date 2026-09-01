@@ -6,6 +6,7 @@ import { site, fullAddress } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Política de Privacidade — Roteiro VIP",
   description: `Como a ${site.legalName} coleta, utiliza e protege os seus dados pessoais.`,
+  alternates: { canonical: "/politica-de-privacidade", languages: { "pt-BR": "/politica-de-privacidade", en: "/en/privacy-policy" } },
 };
 
 
@@ -141,6 +142,8 @@ export default function PrivacidadePage() {
     <LegalDoc
       eyebrow="Jurídico"
       title="Política de Privacidade"
+      lang="pt"
+      alternate={{ lang: "en", href: "/en/privacy-policy" }}
       sections={sections}
     />
   );

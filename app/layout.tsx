@@ -21,6 +21,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://roteirovip.com"),
   title: "Roteiro VIP | Viagens para os parques de Orlando",
   description:
     "Assessoria em Orlando desde 2019 que monta o seu roteiro dia a dia e intermedia ingressos, casa, restaurantes e guia nos parques junto aos melhores fornecedores. Atendimento em português, pagamento em reais.",

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export type LegalSection = { id: string; title: string; body: ReactNode };
@@ -9,19 +10,41 @@ type Props = {
   updatedAt?: string;
   intro?: ReactNode;
   sections: LegalSection[];
+  /** Idioma do documento (define rótulos e o atributo lang do texto) */
+  lang?: "pt" | "en";
+  /** Versão do mesmo documento no outro idioma */
+  alternate?: { lang: "pt" | "en"; href: string };
 };
 
-export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections }: Props) {
+const LABELS = {
+  pt: { toc: "Sumário", updated: "Última atualização", langNav: "Idioma", pt: "Português", en: "English" },
+  en: { toc: "Contents", updated: "Last updated", langNav: "Language", pt: "Português", en: "English" },
+};
+
+export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections, lang = "pt", alternate }: Props) {
+  const t = LABELS[lang];
   return (
     <>
-      <main>
-        <PageHeader eyebrow={eyebrow} title={title} description={updatedAt ? `Última atualização: ${updatedAt}` : undefined} />
+      <main lang={lang === "en" ? "en" : undefined}>
+        <PageHeader eyebrow={eyebrow} title={title} description={updatedAt ? `${t.updated}: ${updatedAt}` : undefined} />
+        {alternate && (
+          <div className="bg-[#f8f7f5] border-b border-gray-200">
+            <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-3 flex items-center gap-4 text-xs font-heading font-bold tracking-widest uppercase" aria-label={t.langNav}>
+              <span className="text-gray-400">{t.langNav}</span>
+              <span className="text-black" aria-current="page">{t[lang]}</span>
+              <span className="text-gray-300">/</span>
+              <Link href={alternate.href} hrefLang={alternate.lang === "en" ? "en" : "pt-BR"} className="text-gray-500 hover:text-[#c9a84c] transition-colors">
+                {t[alternate.lang]}
+              </Link>
+            </nav>
+          </div>
+        )}
         <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-4 gap-16">
-            <nav className="hidden lg:block lg:col-span-1" aria-label="Sumário">
+            <nav className="hidden lg:block lg:col-span-1" aria-label={t.toc}>
               <div className="sticky top-28">
                 <p className="font-heading font-bold text-xs tracking-widest uppercase text-gray-500 mb-4">
-                  Sumário
+                  {t.toc}
                 </p>
                 <ol className="space-y-2.5">
                   {sections.map((s, i) => (

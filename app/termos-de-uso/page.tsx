@@ -6,6 +6,7 @@ import { site, fullAddress } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Termos de Uso — Roteiro VIP",
   description: `Termos e condições de uso do site e dos serviços de assessoria e intermediação de viagens da ${site.legalName}.`,
+  alternates: { canonical: "/termos-de-uso", languages: { "pt-BR": "/termos-de-uso", en: "/en/terms-of-use" } },
 };
 
 
@@ -350,6 +351,8 @@ export default function TermosPage() {
     <LegalDoc
       eyebrow="Jurídico"
       title="Termos de Uso"
+      lang="pt"
+      alternate={{ lang: "en", href: "/en/terms-of-use" }}
       intro={
         <p>
           Leia com atenção. Estes Termos contêm disposições importantes sobre a natureza dos nossos serviços de <strong>intermediação</strong>, a responsabilidade de <strong>fornecedores terceiros</strong>, <strong>limitações de responsabilidade</strong>, <strong>renúncia a júri e a ações coletivas</strong> e o <strong>foro exclusivo na Flórida</strong>.
