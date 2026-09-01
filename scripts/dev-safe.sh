@@ -7,11 +7,11 @@
 #
 # Variáveis:
 #   MAX_RSS_MB   limite de RSS somado da árvore do dev server (padrão 3500)
-#   MAX_SWAP_MB  limite de swap usado pelo sistema (padrão 1500)
+#   MAX_SWAP_MB  limite de swap usado pelo sistema (padrão 4000; é o swap total do Mac, não só do Next)
 #   MIN_FREE_MB  mínimo de memória "free+inactive" do sistema (padrão 600)
 set -u
 MAX_RSS_MB=${MAX_RSS_MB:-3500}
-MAX_SWAP_MB=${MAX_SWAP_MB:-1500}
+MAX_SWAP_MB=${MAX_SWAP_MB:-4000}
 MIN_FREE_MB=${MIN_FREE_MB:-600}
 
 # Roda em QoS "utility": o macOS prioriza a UI sobre o compilador.

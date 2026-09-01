@@ -23,8 +23,8 @@ export const site = {
   // Fill in when available, e.g. "ST12345". Rendered only when set.
   sellerOfTravelNo: "",
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
+    facebook: "https://www.facebook.com/roteirovip",
+    instagram: "https://www.instagram.com/roteirovip",
   },
 } as const;
 
