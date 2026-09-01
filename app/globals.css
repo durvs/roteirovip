@@ -69,3 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 .post-prose a:hover { color: #c9a84c; }
 .post-prose img { display: block; width: 100%; height: auto; margin: 2.5rem 0; }
 .post-prose p:has(> img:only-child) { margin: 0; }
+
+/* reCAPTCHA v3: badge flutuante escondido; o aviso obrigatório está no formulário de contato */
+.grecaptcha-badge { visibility: hidden; }

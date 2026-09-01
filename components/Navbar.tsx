@@ -40,8 +40,9 @@ export default function Navbar() {
                   alt="Roteiro VIP"
                   fill
                   sizes="176px"
+                  // logo.webp é branco: no header claro (pós-scroll) vira preto
                   className={`object-contain object-left transition-all duration-500 ${
-                    scrolled ? "" : "brightness-0 invert"
+                    scrolled ? "brightness-0" : ""
                   }`}
                   priority
                 />

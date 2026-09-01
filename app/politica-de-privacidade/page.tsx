@@ -127,7 +127,9 @@ const sections: LegalSection[] = [
         <br />
         {site.address.city}, {site.address.state} {site.address.zip}, {site.address.country}
         <br />
-        Telefone / WhatsApp: {site.phone}
+        E-mail: <a href={site.emailHref}>{site.email}</a>
+        <br />
+        Telefone: {site.phone}
         <br />
         <Link href="/contato">Formulário de contato</Link>
       </p>

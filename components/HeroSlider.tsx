@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -47,9 +47,27 @@ export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const stripRef = useRef<HTMLDivElement>(null);
+
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
   }, []);
+
+  const prev = useCallback(() => {
+    setCurrent((p) => (p - 1 + slides.length) % slides.length);
+  }, []);
+
+  // Mobile: mantém a aba ativa centralizada na faixa rolável
+  useEffect(() => {
+    const strip = stripRef.current;
+    const tab = tabRefs.current[current];
+    if (!strip || !tab || strip.scrollWidth <= strip.clientWidth) return;
+    strip.scrollTo({
+      left: tab.offsetLeft - (strip.clientWidth - tab.clientWidth) / 2,
+      behavior: "smooth",
+    });
+  }, [current]);
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -57,14 +75,27 @@ export default function HeroSlider() {
     return () => clearInterval(interval);
   }, [isAutoPlaying, next]);
 
-  const goTo = (index: number) => {
-    setCurrent(index);
+  const pauseAutoplay = () => {
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
+  const goTo = (index: number) => {
+    setCurrent(index);
+    pauseAutoplay();
+  };
+
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
+    <motion.section
+      className="relative h-screen min-h-[600px] overflow-hidden bg-black"
+      style={{ touchAction: "pan-y" }}
+      onPanEnd={(_, info) => {
+        if (Math.abs(info.offset.x) < 50 || Math.abs(info.offset.x) < Math.abs(info.offset.y)) return;
+        if (info.offset.x < 0) next();
+        else prev();
+        pauseAutoplay();
+      }}
+    >
       {/* Slides: all mounted and preloaded, crossfade via opacity (no blank gap) */}
       <div className="absolute inset-0">
         {slides.map((slide, i) => (
@@ -97,7 +128,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto px-6 lg:px-8 pb-20 lg:pb-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${current}`}
@@ -140,24 +171,38 @@ export default function HeroSlider() {
         </AnimatePresence>
       </div>
 
-      {/* Park tabs */}
+      {/* Park tabs: faixa rolável no mobile, barra dividida no desktop */}
       <div className="absolute bottom-0 left-0 right-0 z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex">
+        <div className="relative max-w-7xl mx-auto lg:px-8">
+          <div
+            ref={stripRef}
+            className="flex overflow-x-auto snap-x snap-mandatory bg-black/60 lg:bg-transparent px-6 lg:px-0 lg:overflow-visible"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            role="tablist"
+            aria-label="Parques"
+          >
             {slides.map((slide, i) => (
               <button
-                key={i}
+                key={slide.tab}
+                ref={(el) => {
+                  tabRefs.current[i] = el;
+                }}
+                role="tab"
+                aria-selected={i === current}
                 onClick={() => goTo(i)}
-                className={`flex-1 py-4 font-heading font-bold text-xs lg:text-sm tracking-widest uppercase transition-all duration-300 ${
+                className={`shrink-0 lg:shrink lg:flex-1 snap-center whitespace-nowrap px-5 lg:px-0 py-4 font-heading font-bold text-xs lg:text-sm tracking-widest uppercase transition-all duration-300 ${
                   i === current
                     ? "bg-[#c9a84c] text-black"
-                    : "bg-black/60 text-white/70 hover:bg-black/80 hover:text-white"
+                    : "bg-transparent lg:bg-black/60 text-white/70 hover:bg-black/80 hover:text-white"
                 }`}
               >
                 {slide.tab}
               </button>
             ))}
           </div>
+          {/* Degradê nas bordas: sinaliza que a faixa rola (mobile) */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-black/70 to-transparent lg:hidden" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-black/70 to-transparent lg:hidden" />
         </div>
       </div>
 
@@ -171,6 +216,6 @@ export default function HeroSlider() {
           transition={{ duration: 6, ease: "linear" }}
         />
       </div>
-    </section>
+    </motion.section>
   );
 }

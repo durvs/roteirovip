@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Phone } from "lucide-react";
+import TrackedLink from "@/components/TrackedLink";
 import { site, fullAddress, services, legalLinks, mapsLinkUrl } from "@/lib/site";
 
 function FacebookIcon() {
@@ -45,7 +46,7 @@ export default function Footer() {
                   alt="Roteiro VIP"
                   fill
                   sizes="176px"
-                  className="object-contain object-left brightness-0 invert"
+                  className="object-contain object-left"
                 />
               </div>
             </Link>
@@ -146,15 +147,17 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                <TrackedLink
                   href={site.whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
+                  event="contact"
+                  params={{ method: "whatsapp", location: "footer" }}
                   className="flex items-center gap-2 text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
                 >
                   <Phone size={16} className="shrink-0 text-[#c9a84c]" />
-                  {site.phone}
-                </a>
+                  WhatsApp {site.whatsapp}
+                </TrackedLink>
               </li>
               <li>
                 <Link

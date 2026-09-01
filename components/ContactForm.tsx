@@ -1,8 +1,34 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState, useEffect, startTransition, type FormEvent } from "react";
+import Script from "next/script";
+import { sendGAEvent } from "@next/third-parties/google";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { sendContact, type ContactState } from "@/app/contato/actions";
+
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+// Espera mínima antes de enviar: dá tempo do reCAPTCHA pontuar e evita que o
+// envio pareça instantâneo demais.
+const SUBMIT_DELAY_MS = 1500;
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (cb: () => void) => void;
+      execute: (siteKey: string, opts: { action: string }) => Promise<string>;
+    };
+  }
+}
+
+function getRecaptchaToken(): Promise<string> {
+  return new Promise((resolve) => {
+    const g = window.grecaptcha;
+    if (!RECAPTCHA_SITE_KEY || !g) return resolve("");
+    g.ready(() => {
+      g.execute(RECAPTCHA_SITE_KEY, { action: "contato" }).then(resolve, () => resolve(""));
+    });
+  });
+}
 
 const initialState: ContactState = { status: "idle", message: "" };
 
@@ -13,6 +39,29 @@ const labelClass =
 
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(sendContact, initialState);
+  const [submitting, setSubmitting] = useState(false);
+  const busy = pending || submitting;
+
+  // Conversão GA4: dispara uma vez, quando a action confirma o envio
+  useEffect(() => {
+    if (state.status === "success") {
+      sendGAEvent("event", "generate_lead", { method: "formulario_contato" });
+    }
+  }, [state.status]);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (busy) return;
+    setSubmitting(true);
+    const data = new FormData(e.currentTarget);
+    const [token] = await Promise.all([
+      getRecaptchaToken(),
+      new Promise((r) => setTimeout(r, SUBMIT_DELAY_MS)),
+    ]);
+    data.set("recaptchaToken", token);
+    startTransition(() => formAction(data));
+    setSubmitting(false);
+  };
 
   if (state.status === "success") {
     return (
@@ -27,7 +76,10 @@ export default function ContactForm() {
   }
 
   return (
-    <form action={formAction} className="space-y-6" noValidate>
+    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+      {RECAPTCHA_SITE_KEY && (
+        <Script src={`https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`} strategy="lazyOnload" />
+      )}
       {/* Honeypot */}
       <div className="hidden" aria-hidden="true">
         <label htmlFor="website">Website</label>
@@ -76,14 +128,23 @@ export default function ContactForm() {
         <a href="/politica-de-privacidade" className="underline hover:text-[#c9a84c]">Política de Privacidade</a>{" "}
         e nossos{" "}
         <a href="/termos-de-uso" className="underline hover:text-[#c9a84c]">Termos de Uso</a>.
+        {RECAPTCHA_SITE_KEY && (
+          <>
+            {" "}Este formulário é protegido pelo reCAPTCHA e se aplicam a{" "}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#c9a84c]">Política de Privacidade</a>{" "}
+            e os{" "}
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#c9a84c]">Termos de Serviço</a>{" "}
+            do Google.
+          </>
+        )}
       </p>
 
       <button
         type="submit"
-        disabled={pending}
+        disabled={busy}
         className="inline-flex items-center gap-3 bg-black text-white font-heading font-bold tracking-wider px-8 py-4 text-sm hover:bg-[#c9a84c] hover:text-black transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {pending ? "Enviando..." : "Quero meu roteiro"}
+        {busy ? "Enviando..." : "Quero meu roteiro"}
         <Send size={16} />
       </button>
     </form>

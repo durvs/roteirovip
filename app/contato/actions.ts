@@ -10,6 +10,28 @@ export type ContactState = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/**
+ * reCAPTCHA v3. Só verifica quando RECAPTCHA_SECRET_KEY está configurada;
+ * sem a chave (dev/local) o formulário segue funcionando só com o honeypot.
+ */
+async function verifyRecaptcha(token: string): Promise<boolean> {
+  const secret = process.env.RECAPTCHA_SECRET_KEY;
+  if (!secret) return true;
+  if (!token) return false;
+  try {
+    const res = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ secret, response: token }),
+    });
+    const data = (await res.json()) as { success: boolean; score?: number; action?: string };
+    return data.success && (data.score ?? 0) >= 0.5 && data.action === "contato";
+  } catch (err) {
+    console.error("[contato] reCAPTCHA indisponível:", err);
+    return false;
+  }
+}
+
 function clean(v: FormDataEntryValue | null, max = 2000) {
   return (typeof v === "string" ? v : "").trim().slice(0, max);
 }
@@ -45,6 +67,13 @@ export async function sendContact(
     };
   }
 
+  if (!(await verifyRecaptcha(clean(formData.get("recaptchaToken"), 4000)))) {
+    return {
+      status: "error",
+      message: `Não conseguimos confirmar que você não é um robô. Tente de novo ou fale conosco pelo WhatsApp ${site.whatsapp}.`,
+    };
+  }
+
   const subject = `Novo contato pelo site: ${data.name}`;
   const text = [
     `Nome: ${data.name}`,
@@ -58,10 +87,11 @@ export async function sendContact(
 
   try {
     const resendKey = process.env.RESEND_API_KEY;
-    const to = process.env.CONTACT_TO_EMAIL;
+    // Vários destinatários separados por vírgula
+    const to = (process.env.CONTACT_TO_EMAIL ?? "").split(",").map((s) => s.trim()).filter(Boolean);
     const webhook = process.env.CONTACT_WEBHOOK_URL;
 
-    if (resendKey && to) {
+    if (resendKey && to.length) {
       const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
@@ -69,8 +99,8 @@ export async function sendContact(
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: process.env.CONTACT_FROM_EMAIL ?? "Roteiro VIP <onboarding@resend.dev>",
-          to: [to],
+          from: process.env.CONTACT_FROM_EMAIL ?? "Roteiro VIP <contato@roteirovip.com>",
+          to,
           reply_to: data.email,
           subject,
           text,
@@ -93,7 +123,7 @@ export async function sendContact(
     console.error("[contato] Falha ao enviar:", err);
     return {
       status: "error",
-      message: `Não foi possível enviar agora. Fale conosco pelo WhatsApp ${site.phone}.`,
+      message: `Não foi possível enviar agora. Fale conosco pelo WhatsApp ${site.whatsapp}.`,
     };
   }
 

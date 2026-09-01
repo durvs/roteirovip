@@ -6,53 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
-const services = [
-  {
-    name: "Roteiro dia a dia",
-    image: "/images/passagem-aerea.webp",
-    description:
-      "Cada dia da viagem definido: parque, dia livre, compras, chegada e retorno. Revisado quantas vezes for preciso, sem custo adicional.",
-  },
-  {
-    name: "Ingressos e fura-fila",
-    image: "/images/universal-studios.webp",
-    description:
-      "Intermediamos a emissão dos ingressos da Disney e da Universal, acompanhamos a vinculação ao aplicativo e a compra do Express Pass e do Lightning Lane.",
-  },
-  {
-    name: "Guia dentro do parque",
-    image: "/images/disney-world.webp",
-    description:
-      "Um guia parceiro acompanha a família no parque, agendando atrações e restaurantes enquanto vocês aproveitam.",
-  },
-  {
-    name: "Casa e carro",
-    image: "/images/assessoria.webp",
-    description:
-      "Selecionamos e intermediamos a reserva da casa em condomínio, com piscina aquecida, e do carro retirado no aeroporto. Contrato e vouchers em mãos antes do embarque.",
-  },
-  {
-    name: "Concierge",
-    image: "/images/epcot.webp",
-    description:
-      "Mesa com personagens, festas de Halloween, jogo da NBA, oficina de sabre de luz. Se existe em Orlando, intermediamos a reserva.",
-  },
-  {
-    name: "Chofer",
-    image: "/images/chofer.webp",
-    description: "Motorista particular, por meio de parceiros locais, para quem prefere não dirigir em Orlando.",
-  },
-  {
-    name: "Babysitter",
-    image: "/images/babysitter.webp",
-    description: "Profissionais parceiras de confiança, para que os pais tenham uma noite livre com tranquilidade.",
-  },
-  {
-    name: "Registro VIP",
-    image: "/images/registro-camera.webp",
-    description: "Fotógrafo parceiro acompanhando a família nos parques. Vocês voltam com as fotos, não apenas com a lembrança.",
-  },
-];
+import { services } from "@/lib/services";
 
 export default function Services() {
   const sectionRef = useRef(null);
@@ -122,13 +76,13 @@ export default function Services() {
       >
         {services.map((service, i) => (
           <motion.div
-            key={service.name}
+            key={service.slug}
             className="shrink-0 w-80 lg:w-96"
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.1 }}
           >
-            <Link href="/contato" className="block group">
+            <Link href={`/servicos/${service.slug}`} className="block group">
               <div className="relative h-72 overflow-hidden">
                 <Image
                   src={service.image}
@@ -153,10 +107,10 @@ export default function Services() {
                   {service.name}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4">
-                  {service.description}
+                  {service.short}
                 </p>
                 <div className="flex items-center gap-2 text-[#c9a84c] font-heading font-bold text-sm group-hover:gap-3 transition-all">
-                  Pedir orçamento
+                  Ver detalhes
                   <ArrowRight size={14} />
                 </div>
               </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
+import TrackedLink from "@/components/TrackedLink";
 import { site, fullAddress, mapsEmbedUrl, mapsLinkUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -50,11 +51,34 @@ export default function ContatoPage() {
                     <Phone className="text-[#c9a84c] shrink-0 mt-1" size={22} />
                     <div>
                       <p className="font-heading font-bold text-xs tracking-widest uppercase text-gray-500 mb-1">
-                        Telefone / WhatsApp
+                        Telefone
                       </p>
-                      <a href={site.phoneHref} className="text-black hover:text-[#c9a84c] transition-colors">
+                      <TrackedLink
+                        href={site.phoneHref}
+                        event="contact"
+                        params={{ method: "telefone", location: "contato" }}
+                        className="text-black hover:text-[#c9a84c] transition-colors"
+                      >
                         {site.phone}
-                      </a>
+                      </TrackedLink>
+                    </div>
+                  </li>
+                  <li className="flex gap-4">
+                    <MessageCircle className="text-[#c9a84c] shrink-0 mt-1" size={22} />
+                    <div>
+                      <p className="font-heading font-bold text-xs tracking-widest uppercase text-gray-500 mb-1">
+                        WhatsApp
+                      </p>
+                      <TrackedLink
+                        href={site.whatsappHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        event="contact"
+                        params={{ method: "whatsapp", location: "contato" }}
+                        className="text-black hover:text-[#c9a84c] transition-colors"
+                      >
+                        {site.whatsapp}
+                      </TrackedLink>
                     </div>
                   </li>
                   <li className="flex gap-4">
@@ -72,15 +96,17 @@ export default function ContatoPage() {
                 </ul>
               </div>
 
-              <a
+              <TrackedLink
                 href={site.whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
+                event="contact"
+                params={{ method: "whatsapp", location: "contato" }}
                 className="inline-flex items-center gap-3 bg-[#c9a84c] text-black font-heading font-bold tracking-wider px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-300"
               >
                 <MessageCircle size={18} />
                 Chamar no WhatsApp
-              </a>
+              </TrackedLink>
 
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#f8f7f5]">
                 <iframe
