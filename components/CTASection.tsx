@@ -14,7 +14,7 @@ export default function CTASection() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-1.webp"
+          src="/images/epcot.webp"
           alt="Epcot background"
           fill
           className="object-cover"
@@ -35,7 +35,7 @@ export default function CTASection() {
           >
             <div className="relative w-full h-[600px]">
               <Image
-                src="https://www.roteirovip.com/wp-content/uploads/2024/04/Casal-feliz-disney.webp"
+                src="/images/casal-feliz-disney.webp"
                 alt="Casal feliz na Disney"
                 fill
                 className="object-cover object-top"
@@ -58,7 +58,7 @@ export default function CTASection() {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              Comece Agora
+              Próximo passo
             </motion.p>
 
             <motion.h2
@@ -68,8 +68,8 @@ export default function CTASection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              Faça seu orçamento
-              <span className="text-[#c9a84c]"> hoje!</span>
+              Conte como vocês
+              <span className="text-[#c9a84c]"> imaginam a viagem.</span>
             </motion.h2>
 
             <motion.div
@@ -85,9 +85,9 @@ export default function CTASection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.5 }}
             >
-              Descubra uma jornada sem preocupações pelos parques temáticos de
-              Orlando com a Roteiro VIP. Solicite seu orçamento hoje e deixe-nos
-              transformar seus sonhos em realidade!
+              Quantas pessoas, idade das crianças, datas. Com isso a gente marca
+              uma reunião por vídeo e volta com sugestões de casa, roteiro e
+              valores. Sem compromisso.
             </motion.p>
 
             <motion.div
@@ -96,10 +96,10 @@ export default function CTASection() {
               transition={{ duration: 0.7, delay: 0.7 }}
             >
               <Link
-                href="/orcamento"
+                href="/contato"
                 className="inline-flex items-center gap-3 bg-[#c9a84c] text-black font-heading font-bold tracking-wider px-10 py-5 hover:bg-white hover:text-black transition-all duration-300 text-sm group"
               >
-                Faça seu Orçamento
+                Quero meu roteiro
                 <span className="transform group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </motion.div>
@@ -112,9 +112,9 @@ export default function CTASection() {
               transition={{ duration: 0.7, delay: 0.9 }}
             >
               {[
-                { value: "9+", label: "Parques" },
-                { value: "100%", label: "Personalizado" },
-                { value: "VIP", label: "Experiência" },
+                { value: "Orlando", label: "Escritório local" },
+                { value: "Pix", label: "Pague em reais" },
+                { value: "1 dia útil", label: "Para responder" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="text-white font-heading font-black text-2xl">{stat.value}</p>

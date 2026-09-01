@@ -7,28 +7,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 const parks = [
-  { name: "Magic Kingdom", href: "/magic-kingdom" },
-  { name: "Animal Kingdom", href: "/animal-kingdom" },
-  { name: "Hollywood Studios", href: "/hollywood-studios" },
-  { name: "Universal Orlando", href: "/universal-orlando" },
-  { name: "Islands of Adventure", href: "/islands-of-adventure" },
-  { name: "Busch Gardens", href: "/busch-gardens" },
-  { name: "Legoland", href: "/legoland" },
-  { name: "SeaWorld", href: "/seaworld" },
-  { name: "Epcot", href: "/epcot" },
+  { name: "Magic Kingdom", href: "/#parques" },
+  { name: "Animal Kingdom", href: "/#parques" },
+  { name: "Hollywood Studios", href: "/#parques" },
+  { name: "Universal Orlando", href: "/#parques" },
+  { name: "Islands of Adventure", href: "/#parques" },
+  { name: "Busch Gardens", href: "/#parques" },
+  { name: "Legoland", href: "/#parques" },
+  { name: "SeaWorld", href: "/#parques" },
+  { name: "Epcot", href: "/#parques" },
 ];
 
 const photos = [
   {
-    src: "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-alege-universal-qmidbc3822xkhlh3cygy7prowkp86nf4rpaicwi5ps.webp",
+    src: "/images/garota-alege-universal.webp",
     alt: "Visitante no Universal",
   },
   {
-    src: "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-mickey-qmidypco4nqw4iviplpr5mjpetspi3d8oqkfqtxojw.webp",
+    src: "/images/garota-mickey.webp",
     alt: "Visitante com Mickey",
   },
   {
-    src: "https://www.roteirovip.com/wp-content/uploads/elementor/thumbs/Garota-disney-qmidymj5k5n15ozm62hvg59bmo6lv021oclzb01v2k.webp",
+    src: "/images/garota-disney.webp",
     alt: "Visitante na Disney",
   },
 ];
@@ -75,11 +75,12 @@ export default function AboutUs() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              A Roteiro VIP é uma agência especializada em planejamento e
-              organização de viagens para parques temáticos em Orlando. Nossa
-              missão é proporcionar serviços personalizados, garantindo uma
-              experiência única e sem complicações para nossos clientes durante
-              sua visita aos parques.
+              Somos uma agência com escritório em Orlando, feita para famílias
+              brasileiras que vêm pelos parques. O trabalho começa numa reunião
+              por vídeo, vira um roteiro dia a dia e termina com um guia ao lado
+              da sua família dentro do parque. No meio do caminho, cuidamos de
+              ingressos, casa, carro, restaurantes e da burocracia que ninguém
+              quer fazer.
             </motion.p>
 
             {/* Parks list */}
@@ -92,7 +93,7 @@ export default function AboutUs() {
               <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                 {parks.map((park, i) => (
                   <motion.div
-                    key={park.href}
+                    key={park.name}
                     initial={{ opacity: 0, x: -10 }}
                     animate={isInView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.4, delay: 0.5 + i * 0.06 }}
@@ -115,10 +116,10 @@ export default function AboutUs() {
               transition={{ duration: 0.7, delay: 0.7 }}
             >
               <Link
-                href="/orcamento"
+                href="/contato"
                 className="inline-block bg-black text-white font-heading font-bold text-sm tracking-widest px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
               >
-                Faça seu Orçamento
+                Quero meu roteiro
               </Link>
             </motion.div>
           </motion.div>

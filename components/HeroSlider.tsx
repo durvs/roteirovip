@@ -7,38 +7,38 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "https://www.roteirovip.com/wp-content/uploads/revslider/california/slide-new-copyright1.jpg",
-    headline: "Viaje, descubra,\nviva, inspire.",
+    image: "/images/slide-new.webp",
+    headline: "Orlando sem planilha,\nsem perrengue.",
     subtitle:
-      "Transforme sua jornada em Orlando com a expertise da Roteiro VIP. Faça seu orçamento hoje e comece a criar memórias para toda a vida!",
+      "A gente monta o roteiro dia a dia, emite os ingressos, reserva os restaurantes e coloca um guia com vocês dentro do parque. Você só aproveita.",
     tab: "Disney",
   },
   {
-    image: "https://www.roteirovip.com/wp-content/uploads/revslider/california/slider2-copyright1.jpg",
-    headline: "Torne cada\njornada especial",
+    image: "/images/slider2.webp",
+    headline: "Cada dia de parque\ncom começo, meio e fim.",
     subtitle:
-      "Deixe a Roteiro VIP guiar você pelos encantos de Orlando. Prepare-se para uma experiência verdadeiramente memorável!",
+      "Express Pass, Lightning Lane, horário de show e mesa reservada. Tudo agendado antes de vocês passarem pela catraca.",
     tab: "Universal",
   },
   {
-    image: "https://www.roteirovip.com/wp-content/uploads/revslider/california/slider3-copyright1.jpg",
-    headline: "Crie memórias\ninesquecíveis",
+    image: "/images/slider3.webp",
+    headline: "Viagem em família,\nde verdade.",
     subtitle:
-      "Com a Roteiro VIP, sua viagem a Orlando será uma aventura única. Venha escrever o próximo capítulo das suas memórias!",
+      "Do roteiro pensado para a altura das crianças à marmita brasileira entregue na casa. Cuidamos do que cansa para sobrar o que importa.",
     tab: "Busch Gardens",
   },
   {
-    image: "https://www.roteirovip.com/wp-content/uploads/revslider/california/post-14-copyright1.jpg",
-    headline: "Seu destino,\nnossa expertise.",
+    image: "/images/post-14.webp",
+    headline: "Você fala com gente,\nnão com um site.",
     subtitle:
-      "Sua viagem extraordinária. Descubra o melhor dos parques temáticos conosco!",
+      "Um grupo de WhatsApp com a nossa equipe, do primeiro orçamento ao voo de volta. Uma pergunta, uma resposta, no mesmo lugar.",
     tab: "SeaWorld",
   },
   {
-    image: "https://www.roteirovip.com/wp-content/uploads/revslider/california/slider5-copyright1.jpg",
-    headline: "Transformamos\nsonhos em destinos",
+    image: "/images/slider5.webp",
+    headline: "Pague em reais.\nViaje em dólar.",
     subtitle:
-      "Deixe-nos tornar sua viagem uma experiência única e memorável. Descubra o encanto dos parques temáticos conosco!",
+      "Orçamento fechado serviço por serviço, pagamento via Pix e aviso quando o câmbio está bom. Sem surpresa na fatura.",
     tab: "LegoLand",
   },
 ];
@@ -64,33 +64,40 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Slides */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={current}
-          className="absolute inset-0"
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Image
-            src={slides[current].image}
-            alt={slides[current].headline}
-            fill
-            className="object-cover object-center"
-            priority={current === 0}
-            sizes="100vw"
-          />
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        </motion.div>
-      </AnimatePresence>
+    <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
+      {/* Slides: all mounted and preloaded, crossfade via opacity (no blank gap) */}
+      <div className="absolute inset-0">
+        {slides.map((slide, i) => (
+          <motion.div
+            key={slide.image}
+            className="absolute inset-0"
+            initial={false}
+            animate={{
+              opacity: i === current ? 1 : 0,
+              scale: i === current ? 1 : 1.05,
+            }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            style={{ zIndex: i === current ? 1 : 0 }}
+            aria-hidden={i !== current}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.headline.replace("\n", " ")}
+              fill
+              className="object-cover object-center"
+              priority={i === 0}
+              loading={i === 0 ? undefined : "eager"}
+              sizes="100vw"
+            />
+          </motion.div>
+        ))}
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/70 via-black/40 to-black/20" />
+        <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-center max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto px-6 lg:px-8">
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${current}`}
@@ -123,10 +130,10 @@ export default function HeroSlider() {
             </p>
 
             <Link
-              href="/orcamento"
+              href="/contato"
               className="inline-flex items-center gap-3 bg-white text-black font-heading font-bold tracking-wider px-8 py-4 hover:bg-[#c9a84c] hover:text-black transition-all duration-300 group text-sm"
             >
-              Faça seu Orçamento
+              Quero meu roteiro
               <span className="w-0 overflow-hidden group-hover:w-6 transition-all duration-300">→</span>
             </Link>
           </motion.div>
@@ -134,7 +141,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Park tabs */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute bottom-0 left-0 right-0 z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex">
             {slides.map((slide, i) => (
@@ -155,7 +162,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Progress bar */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-white/10">
+      <div className="absolute top-0 left-0 right-0 z-10 h-0.5 bg-white/10">
         <motion.div
           className="h-full bg-[#c9a84c]"
           key={current}

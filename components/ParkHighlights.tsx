@@ -7,15 +7,15 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const parks = [
-  { name: "Magic Kingdom", href: "/magic-kingdom", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Disney-World-1.webp" },
-  { name: "Animal Kingdom", href: "/animal-kingdom", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Animal-Kingdom.webp" },
-  { name: "Hollywood Studios", href: "/hollywood-studios", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Hollywood-Studios.webp" },
-  { name: "Universal", href: "/universal-orlando", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Universal-Studios-1.webp" },
-  { name: "Islands of Adventure", href: "/islands-of-adventure", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Islands-of-Adventures.webp" },
-  { name: "Busch Gardens", href: "/busch-gardens", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Bush-Gardens.webp" },
-  { name: "LegoLand", href: "/legoland", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Legoland-1.webp" },
-  { name: "SeaWorld", href: "/seaworld", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/SeaWorld-1.webp" },
-  { name: "Epcot", href: "/epcot", image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Epcot-1.webp" },
+  { name: "Magic Kingdom", href: "/magic-kingdom", image: "/images/disney-world.webp" },
+  { name: "Animal Kingdom", href: "/animal-kingdom", image: "/images/animal-kingdom.webp" },
+  { name: "Hollywood Studios", href: "/hollywood-studios", image: "/images/hollywood-studios.webp" },
+  { name: "Universal", href: "/universal-orlando", image: "/images/universal-studios.webp" },
+  { name: "Islands of Adventure", href: "/islands-of-adventure", image: "/images/islands-of-adventures.webp" },
+  { name: "Busch Gardens", href: "/busch-gardens", image: "/images/bush-gardens.webp" },
+  { name: "LegoLand", href: "/legoland", image: "/images/legoland.webp" },
+  { name: "SeaWorld", href: "/seaworld", image: "/images/seaworld.webp" },
+  { name: "Epcot", href: "/epcot", image: "/images/epcot.webp" },
 ];
 
 export default function ParkHighlights() {
@@ -33,7 +33,7 @@ export default function ParkHighlights() {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 lg:py-36 bg-[#f8f7f5] overflow-hidden">
+    <section id="parques" ref={sectionRef} className="py-24 lg:py-36 bg-[#f8f7f5] overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-12">
         <div className="flex items-end justify-between gap-6">
           <div>
@@ -43,7 +43,7 @@ export default function ParkHighlights() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
             >
-              Experiências
+              Parques
             </motion.p>
             <motion.h2
               className="font-heading font-black leading-tight text-black"
@@ -52,7 +52,7 @@ export default function ParkHighlights() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              Destaques da viagem
+              Onde a gente leva você
             </motion.h2>
             <motion.p
               className="text-gray-500 text-base lg:text-lg mt-4 max-w-xl leading-relaxed"
@@ -60,8 +60,9 @@ export default function ParkHighlights() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Uma experiência que não apenas marca, mas também transforma sua
-              jornada em algo verdadeiramente inesquecível.
+              Disney, Universal, SeaWorld, Busch Gardens e LEGOLAND. Para cada
+              um, sabemos qual dia costuma ser mais vazio, qual restaurante vale
+              a reserva e qual fila vale o fura-fila.
             </motion.p>
           </div>
 
@@ -98,13 +99,13 @@ export default function ParkHighlights() {
       >
         {parks.map((park, i) => (
           <motion.div
-            key={park.href}
+            key={park.name}
             className="shrink-0 w-72 lg:w-80"
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.07 }}
           >
-            <Link href={park.href} className="block group">
+            <Link href="/contato" className="block group">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={park.image}

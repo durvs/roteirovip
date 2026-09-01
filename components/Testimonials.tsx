@@ -111,13 +111,13 @@ export default function Testimonials() {
           className="mb-16"
         >
           <p className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4">
-            O que dizem
+            Quem já viajou com a gente
           </p>
           <h2
             className="text-white font-heading font-black leading-tight"
             style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
           >
-            Depoimentos
+            O que as famílias dizem
           </h2>
         </motion.div>
 
@@ -157,7 +157,7 @@ export default function Testimonials() {
               className="text-white/90 font-light leading-relaxed mb-10 italic"
               style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)" }}
             >
-              "{testimonials[current].text}"
+              &ldquo;{testimonials[current].text}&rdquo;
             </blockquote>
 
             {/* Author */}

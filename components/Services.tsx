@@ -8,40 +8,49 @@ import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 const services = [
   {
+    name: "Roteiro dia a dia",
+    image: "/images/passagem-aerea.webp",
+    description:
+      "Cada dia da viagem definido: parque, dia livre, compras, chegada e volta. Revisado quantas vezes for preciso, sem custo extra.",
+  },
+  {
+    name: "Ingressos e fura-fila",
+    image: "/images/universal-studios.webp",
+    description:
+      "Emitimos os ingressos da Disney e da Universal, vinculamos no app e cuidamos do Express Pass e do Lightning Lane por vocês.",
+  },
+  {
+    name: "Guia dentro do parque",
+    image: "/images/disney-world.webp",
+    description:
+      "Um guia acompanha a família no parque, agendando atrações e restaurantes enquanto vocês só aproveitam.",
+  },
+  {
+    name: "Casa e carro",
+    image: "/images/assessoria.webp",
+    description:
+      "Casa em condomínio com piscina aquecida, carro retirado no aeroporto, contrato e vouchers na sua mão antes de embarcar.",
+  },
+  {
+    name: "Concierge",
+    image: "/images/epcot.webp",
+    description:
+      "Mesa com personagens, festa de Halloween, jogo da NBA, oficina de sabre de luz. Se existe em Orlando, a gente reserva.",
+  },
+  {
     name: "Chofer",
-    href: "/services/chofer",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Chofer-390x381.webp",
-    description: "Transporte VIP com motorista particular durante toda sua viagem.",
-  },
-  {
-    name: "Assessoria VIP",
-    href: "/services/assessoria_vip",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Assessoria-390x381.webp",
-    description: "Planejamento completo e personalizado para a sua viagem perfeita.",
-  },
-  {
-    name: "Roteiro Personalizado",
-    href: "/services/roteiro-personalizado",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Passagem-aerea-390x381.webp",
-    description: "Criamos o roteiro ideal para você aproveitear cada momento.",
+    image: "/images/chofer.webp",
+    description: "Motorista particular para quem prefere não dirigir nem procurar vaga em Orlando.",
   },
   {
     name: "Babysitter",
-    href: "/services/babysitter",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Babysitter-390x381.webp",
-    description: "Cuidamos dos pequenos com carinho enquanto você curte os parques.",
+    image: "/images/babysitter.webp",
+    description: "Babá de confiança para os pais terem uma noite livre sem preocupação.",
   },
   {
     name: "Registro VIP",
-    href: "/services/registro_vip",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Registro-camera-390x381.webp",
-    description: "Fotografia profissional para eternizar suas memórias especiais.",
-  },
-  {
-    name: "Guia VIP",
-    href: "/services/guia_vip",
-    image: "https://www.roteirovip.com/wp-content/uploads/2024/04/Guia-390x381.webp",
-    description: "Um especialista ao seu lado para maximizar cada experiência.",
+    image: "/images/registro-camera.webp",
+    description: "Fotógrafo acompanhando a família nos parques. Vocês voltam com as fotos, não só com a lembrança.",
   },
 ];
 
@@ -59,7 +68,7 @@ export default function Services() {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 lg:py-36 bg-white overflow-hidden">
+    <section id="servicos" ref={sectionRef} className="py-24 lg:py-36 bg-white overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-12">
         <div className="flex items-end justify-between gap-6">
           <div>
@@ -69,7 +78,7 @@ export default function Services() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
             >
-              O que oferecemos
+              O que a gente faz
             </motion.p>
             <motion.h2
               className="font-heading font-black leading-tight text-black"
@@ -78,7 +87,7 @@ export default function Services() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              Nossos Serviços
+              Do orçamento ao voo de volta
             </motion.h2>
           </div>
 
@@ -113,13 +122,13 @@ export default function Services() {
       >
         {services.map((service, i) => (
           <motion.div
-            key={service.href}
+            key={service.name}
             className="shrink-0 w-80 lg:w-96"
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.1 }}
           >
-            <Link href={service.href} className="block group">
+            <Link href="/contato" className="block group">
               <div className="relative h-72 overflow-hidden">
                 <Image
                   src={service.image}
@@ -147,7 +156,7 @@ export default function Services() {
                   {service.description}
                 </p>
                 <div className="flex items-center gap-2 text-[#c9a84c] font-heading font-bold text-sm group-hover:gap-3 transition-all">
-                  Saiba mais
+                  Pedir orçamento
                   <ArrowRight size={14} />
                 </div>
               </div>

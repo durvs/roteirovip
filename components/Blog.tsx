@@ -127,7 +127,7 @@ export default function Blog() {
           >
             <div className="relative h-full min-h-[500px]">
               <Image
-                src="https://www.roteirovip.com/wp-content/uploads/2024/04/Garota-loira-disney.webp"
+                src="/images/garota-loira-disney.webp"
                 alt="Visitante na Disney"
                 fill
                 className="object-cover object-top"

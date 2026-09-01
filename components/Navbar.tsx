@@ -5,15 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-const services = [
-  { label: "Roteiro Personalizado", href: "/services/roteiro-personalizado" },
-  { label: "Guia VIP", href: "/services/guia_vip" },
-  { label: "Assessoria VIP", href: "/services/assessoria_vip" },
-  { label: "Registro VIP", href: "/services/registro_vip" },
-  { label: "Chofer", href: "/services/chofer" },
-  { label: "Babysitter", href: "/services/babysitter" },
-];
+import { services } from "@/lib/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,6 +39,7 @@ export default function Navbar() {
                   src="/logo.webp"
                   alt="Roteiro VIP"
                   fill
+                  sizes="176px"
                   className={`object-contain object-left transition-all duration-500 ${
                     scrolled ? "" : "brightness-0 invert"
                   }`}
@@ -99,7 +92,7 @@ export default function Navbar() {
                     >
                       {services.map((s) => (
                         <Link
-                          key={s.href}
+                          key={s.label}
                           href={s.href}
                           className="block px-5 py-3 text-sm font-heading font-medium text-black hover:bg-black hover:text-white transition-colors border-b border-gray-50 last:border-0"
                         >
@@ -115,10 +108,10 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden lg:block">
               <Link
-                href="/orcamento"
+                href="/contato"
                 className="inline-flex items-center gap-2 bg-black text-white font-heading font-bold text-sm tracking-wider px-6 py-3 hover:bg-[#c9a84c] hover:text-black transition-all duration-300"
               >
-                Faça seu Orçamento
+                Quero meu roteiro
               </Link>
             </div>
 
@@ -170,9 +163,9 @@ export default function Navbar() {
                 <p className="text-[#c9a84c] font-heading font-bold text-sm tracking-widest mb-3">
                   SERVIÇOS
                 </p>
-                {services.map((s, i) => (
+                {services.map((s) => (
                   <Link
-                    key={s.href}
+                    key={s.label}
                     href={s.href}
                     onClick={() => setMobileOpen(false)}
                     className="block text-white/70 font-heading font-medium text-lg py-1.5 hover:text-white transition-colors"
@@ -189,11 +182,11 @@ export default function Navbar() {
                 className="mt-4"
               >
                 <Link
-                  href="/orcamento"
+                  href="/contato"
                   onClick={() => setMobileOpen(false)}
                   className="inline-block bg-[#c9a84c] text-black font-heading font-bold tracking-wider px-8 py-4 text-lg"
                 >
-                  Faça seu Orçamento
+                  Quero meu roteiro
                 </Link>
               </motion.div>
             </nav>

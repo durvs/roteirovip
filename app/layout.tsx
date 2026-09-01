@@ -18,14 +18,14 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Roteiro VIP — Sua Viagem ao Estilo VIP",
+  title: "Roteiro VIP | Viagens para os parques de Orlando",
   description:
-    "A Roteiro VIP é uma agência especializada em planejamento e organização de viagens para parques temáticos em Orlando. Serviços personalizados para uma experiência única.",
-  keywords: "roteiro vip, orlando, disney, universal, parques temáticos, viagem personalizada",
+    "Agência em Orlando que monta seu roteiro dia a dia, emite ingressos, reserva casa e restaurantes e coloca um guia com a família dentro do parque. Atendimento em português, pagamento em reais.",
+  keywords: "roteiro vip, orlando, disney, universal, parques temáticos, roteiro personalizado, guia nos parques, ingressos disney",
   openGraph: {
-    title: "Roteiro VIP — Sua Viagem ao Estilo VIP",
+    title: "Roteiro VIP | Viagens para os parques de Orlando",
     description:
-      "Planejamento e organização de viagens para parques temáticos em Orlando.",
+      "Roteiro dia a dia, ingressos, casa, carro e guia nos parques. Atendimento em português, pagamento em reais.",
     type: "website",
   },
 };

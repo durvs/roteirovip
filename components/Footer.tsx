@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { MapPin, Phone } from "lucide-react";
+import { site, fullAddress, services, legalLinks, mapsLinkUrl } from "@/lib/site";
 
 function FacebookIcon() {
   return (
@@ -17,22 +19,13 @@ function InstagramIcon() {
   );
 }
 
-const services = [
-  { label: "Roteiro Personalizado", href: "/services/roteiro-personalizado" },
-  { label: "Guia VIP", href: "/services/guia_vip" },
-  { label: "Assessoria VIP", href: "/services/assessoria_vip" },
-  { label: "Registro VIP", href: "/services/registro_vip" },
-  { label: "Chofer", href: "/services/chofer" },
-  { label: "Babysitter", href: "/services/babysitter" },
-];
-
 const parks = [
-  { label: "Magic Kingdom", href: "/magic-kingdom" },
-  { label: "Animal Kingdom", href: "/animal-kingdom" },
-  { label: "Hollywood Studios", href: "/hollywood-studios" },
-  { label: "Universal Orlando", href: "/universal-orlando" },
-  { label: "Islands of Adventure", href: "/islands-of-adventure" },
-  { label: "Epcot", href: "/epcot" },
+  { label: "Magic Kingdom", href: "/#parques" },
+  { label: "Animal Kingdom", href: "/#parques" },
+  { label: "Hollywood Studios", href: "/#parques" },
+  { label: "Universal Orlando", href: "/#parques" },
+  { label: "Islands of Adventure", href: "/#parques" },
+  { label: "Epcot", href: "/#parques" },
 ];
 
 export default function Footer() {
@@ -51,24 +44,25 @@ export default function Footer() {
                   src="/logo.webp"
                   alt="Roteiro VIP"
                   fill
+                  sizes="176px"
                   className="object-contain object-left brightness-0 invert"
                 />
               </div>
             </Link>
 
-            <p className="text-white/50 text-sm leading-relaxed mb-8 font-light">
-              Sua Viagem ao Estilo VIP
+            <p className="text-white/50 text-sm leading-relaxed mb-6 font-light">
+              {site.tagline}
             </p>
 
             <p className="text-white/40 text-sm leading-relaxed mb-8">
-              A melhor experiência em planejamento de viagens para os parques
-              temáticos de Orlando.
+              Roteiro, ingressos, casa, carro e guia nos parques. Atendimento
+              em português, pagamento em reais, escritório em Orlando.
             </p>
 
             {/* Social links */}
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href={site.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:bg-[#c9a84c] hover:text-black hover:border-[#c9a84c] transition-all duration-300"
@@ -77,7 +71,7 @@ export default function Footer() {
                 <FacebookIcon />
               </a>
               <a
-                href="https://instagram.com"
+                href={site.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:bg-[#c9a84c] hover:text-black hover:border-[#c9a84c] transition-all duration-300"
@@ -95,7 +89,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {services.map((s) => (
-                <li key={s.href}>
+                <li key={s.label}>
                   <Link
                     href={s.href}
                     className="text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
@@ -114,7 +108,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {parks.map((p) => (
-                <li key={p.href}>
+                <li key={p.label}>
                   <Link
                     href={p.href}
                     className="text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
@@ -131,7 +125,36 @@ export default function Footer() {
             <h3 className="font-heading font-black text-sm tracking-widest uppercase text-white mb-6">
               Contato
             </h3>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-4 mb-8">
+              <li>
+                <p className="text-white font-heading font-bold text-sm mb-1">
+                  {site.legalName}
+                </p>
+                <a
+                  href={mapsLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
+                >
+                  <MapPin size={16} className="shrink-0 mt-0.5 text-[#c9a84c]" />
+                  <span>
+                    {site.address.street}
+                    <br />
+                    {site.address.city}, {site.address.state} {site.address.zip}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={site.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
+                >
+                  <Phone size={16} className="shrink-0 text-[#c9a84c]" />
+                  {site.phone}
+                </a>
+              </li>
               <li>
                 <Link
                   href="/contato"
@@ -140,34 +163,52 @@ export default function Footer() {
                   Fale Conosco
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-white/50 text-sm hover:text-[#c9a84c] transition-colors font-light"
-                >
-                  Blog
-                </Link>
-              </li>
             </ul>
 
             <Link
-              href="/orcamento"
+              href="/contato"
               className="inline-block bg-[#c9a84c] text-black font-heading font-bold text-xs tracking-widest px-6 py-3 hover:bg-white transition-colors"
             >
-              Faça seu Orçamento
+              Quero meu roteiro
             </Link>
           </div>
+        </div>
+
+        {/* Legal disclaimer */}
+        <div className="border-t border-white/10 pt-8 mb-8">
+          <p className="text-white/30 text-xs leading-relaxed max-w-4xl">
+            A {site.legalName} é uma empresa registrada no Estado da Flórida, EUA,
+            que atua na assessoria, planejamento e intermediação de serviços de
+            viagem. Não somos afiliados, patrocinados ou endossados por The Walt
+            Disney Company, Universal Destinations &amp; Experiences, SeaWorld
+            Parks &amp; Entertainment, LEGOLAND ou qualquer outro parque, hotel ou
+            fornecedor mencionado neste site. Todas as marcas citadas pertencem
+            aos seus respectivos proprietários. Os serviços prestados por
+            terceiros estão sujeitos aos termos e condições de cada fornecedor.
+            Consulte nossos{" "}
+            <Link href="/termos-de-uso" className="underline hover:text-[#c9a84c]">
+              Termos de Uso
+            </Link>
+            .
+          </p>
         </div>
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm font-light">
-            Copyright © 2024 Roteiro VIP. Todos os direitos reservados.
+            © {new Date().getFullYear()} {site.legalName}. {fullAddress}. Todos
+            os direitos reservados.
           </p>
-          <div className="flex items-center gap-1">
-            <span className="text-white/20 text-xs">Desenvolvido com</span>
-            <span className="text-[#c9a84c] text-xs mx-1">♥</span>
-            <span className="text-white/20 text-xs">para viajantes VIP</span>
+          <div className="flex items-center gap-5">
+            {legalLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-white/30 text-xs hover:text-[#c9a84c] transition-colors"
+              >
+                {l.label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
