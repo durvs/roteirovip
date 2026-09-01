@@ -8,37 +8,37 @@ import Image from "next/image";
 const slides = [
   {
     image: "/images/slide-new.webp",
-    headline: "Orlando sem planilha,\nsem perrengue.",
+    headline: "Orlando sob medida.\nSem planilha.",
     subtitle:
-      "A gente monta o roteiro dia a dia, emite os ingressos, reserva os restaurantes e coloca um guia com vocês dentro do parque. Você só aproveita.",
+      "Roteiro dia a dia, ingressos, casa, restaurantes e um guia ao seu lado no parque, tudo coordenado pela Roteiro VIP junto aos melhores fornecedores de Orlando. A vocês, cabe aproveitar.",
     tab: "Disney",
   },
   {
     image: "/images/slider2.webp",
-    headline: "Cada dia de parque\ncom começo, meio e fim.",
+    headline: "Cada dia no parque,\nplanejado ao minuto.",
     subtitle:
-      "Express Pass, Lightning Lane, horário de show e mesa reservada. Tudo agendado antes de vocês passarem pela catraca.",
+      "Express Pass, Lightning Lane, shows e mesas reservadas antes de vocês passarem pela catraca. Intermediamos cada reserva diretamente com os parques.",
     tab: "Universal",
   },
   {
     image: "/images/slider3.webp",
-    headline: "Viagem em família,\nde verdade.",
+    headline: "Uma viagem à altura\nda sua família.",
     subtitle:
-      "Do roteiro pensado para a altura das crianças à marmita brasileira entregue na casa. Cuidamos do que cansa para sobrar o que importa.",
+      "Do roteiro pensado para a altura das crianças às refeições brasileiras entregues na casa. Cada detalhe, cuidado por quem conhece Orlando de perto.",
     tab: "Busch Gardens",
   },
   {
     image: "/images/post-14.webp",
-    headline: "Você fala com gente,\nnão com um site.",
+    headline: "Atendimento pessoal,\ndo início ao fim.",
     subtitle:
-      "Um grupo de WhatsApp com a nossa equipe, do primeiro orçamento ao voo de volta. Uma pergunta, uma resposta, no mesmo lugar.",
+      "Um grupo exclusivo no WhatsApp com a nossa equipe, do primeiro orçamento ao voo de volta. Uma dúvida, uma resposta, sempre com quem conhece a sua viagem.",
     tab: "SeaWorld",
   },
   {
     image: "/images/slider5.webp",
-    headline: "Pague em reais.\nViaje em dólar.",
+    headline: "Pague em reais.\nViva Orlando em dólar.",
     subtitle:
-      "Orçamento fechado serviço por serviço, pagamento via Pix e aviso quando o câmbio está bom. Sem surpresa na fatura.",
+      "Orçamento detalhado serviço por serviço, pagamento via Pix e aviso quando o câmbio favorece. Transparência do início ao fim.",
     tab: "LegoLand",
   },
 ];

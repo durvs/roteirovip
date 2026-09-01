@@ -111,7 +111,7 @@ export default function Testimonials() {
           className="mb-16"
         >
           <p className="text-[#c9a84c] font-heading font-bold text-sm tracking-[0.3em] uppercase mb-4">
-            Quem já viajou com a gente
+            Quem já viajou conosco
           </p>
           <h2
             className="text-white font-heading font-black leading-tight"

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: `Como a ${site.legalName} coleta, utiliza e protege os seus dados pessoais.`,
 };
 
-const UPDATED = "31 de agosto de 2026";
+const UPDATED = "Janeiro de 2026";
 
 const sections: LegalSection[] = [
   {

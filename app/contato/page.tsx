@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import { site, fullAddress, mapsEmbedUrl, mapsLinkUrl } from "@/lib/site";
@@ -14,12 +12,11 @@ export const metadata: Metadata = {
 export default function ContatoPage() {
   return (
     <>
-      <Navbar />
       <main>
         <PageHeader
           eyebrow="Fale conosco"
           title="Contato"
-          description="Quantas pessoas, idade das crianças, datas que estão pensando. Com isso a gente volta em até um dia útil com os próximos passos."
+          description="Quantas pessoas, idade das crianças, datas em mente. Retornamos em até um dia útil com os próximos passos."
         />
 
         <section className="py-20 lg:py-28 bg-white">
@@ -113,7 +110,6 @@ export default function ContatoPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import type { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 
 export type LegalSection = { id: string; title: string; body: ReactNode };
@@ -16,7 +14,6 @@ type Props = {
 export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections }: Props) {
   return (
     <>
-      <Navbar />
       <main>
         <PageHeader eyebrow={eyebrow} title={title} description={`Última atualização: ${updatedAt}`} />
         <section className="py-16 lg:py-24 bg-white">
@@ -54,7 +51,6 @@ export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections }:
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

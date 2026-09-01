@@ -7,15 +7,15 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const parks = [
-  { name: "Magic Kingdom", href: "/magic-kingdom", image: "/images/disney-world.webp" },
-  { name: "Animal Kingdom", href: "/animal-kingdom", image: "/images/animal-kingdom.webp" },
-  { name: "Hollywood Studios", href: "/hollywood-studios", image: "/images/hollywood-studios.webp" },
-  { name: "Universal", href: "/universal-orlando", image: "/images/universal-studios.webp" },
-  { name: "Islands of Adventure", href: "/islands-of-adventure", image: "/images/islands-of-adventures.webp" },
-  { name: "Busch Gardens", href: "/busch-gardens", image: "/images/bush-gardens.webp" },
-  { name: "LegoLand", href: "/legoland", image: "/images/legoland.webp" },
-  { name: "SeaWorld", href: "/seaworld", image: "/images/seaworld.webp" },
-  { name: "Epcot", href: "/epcot", image: "/images/epcot.webp" },
+  { name: "Magic Kingdom", href: "/parques/magic-kingdom", image: "/images/disney-world.webp" },
+  { name: "Animal Kingdom", href: "/parques/animal-kingdom", image: "/images/animal-kingdom.webp" },
+  { name: "Hollywood Studios", href: "/parques/hollywood-studios", image: "/images/hollywood-studios.webp" },
+  { name: "Universal", href: "/parques/universal-orlando", image: "/images/universal-studios.webp" },
+  { name: "Islands of Adventure", href: "/parques/islands-of-adventure", image: "/images/islands-of-adventures.webp" },
+  { name: "Busch Gardens", href: "/parques/busch-gardens", image: "/images/bush-gardens.webp" },
+  { name: "LegoLand", href: "/parques/legoland", image: "/images/legoland.webp" },
+  { name: "SeaWorld", href: "/parques/seaworld", image: "/images/seaworld.webp" },
+  { name: "Epcot", href: "/parques/epcot", image: "/images/epcot.webp" },
 ];
 
 export default function ParkHighlights() {
@@ -52,7 +52,7 @@ export default function ParkHighlights() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
-              Onde a gente leva você
+              Onde levamos você
             </motion.h2>
             <motion.p
               className="text-gray-500 text-base lg:text-lg mt-4 max-w-xl leading-relaxed"
@@ -61,8 +61,8 @@ export default function ParkHighlights() {
               transition={{ duration: 0.7, delay: 0.2 }}
             >
               Disney, Universal, SeaWorld, Busch Gardens e LEGOLAND. Para cada
-              um, sabemos qual dia costuma ser mais vazio, qual restaurante vale
-              a reserva e qual fila vale o fura-fila.
+              um, sabemos o dia mais tranquilo, o restaurante que vale a reserva
+              e a atração que merece o fura-fila.
             </motion.p>
           </div>
 
@@ -105,7 +105,7 @@ export default function ParkHighlights() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: i * 0.07 }}
           >
-            <Link href="/contato" className="block group">
+            <Link href={park.href} className="block group">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={park.image}

@@ -20,12 +20,12 @@ function InstagramIcon() {
 }
 
 const parks = [
-  { label: "Magic Kingdom", href: "/#parques" },
-  { label: "Animal Kingdom", href: "/#parques" },
-  { label: "Hollywood Studios", href: "/#parques" },
-  { label: "Universal Orlando", href: "/#parques" },
-  { label: "Islands of Adventure", href: "/#parques" },
-  { label: "Epcot", href: "/#parques" },
+  { label: "Magic Kingdom", href: "/parques/magic-kingdom" },
+  { label: "Animal Kingdom", href: "/parques/animal-kingdom" },
+  { label: "Hollywood Studios", href: "/parques/hollywood-studios" },
+  { label: "Universal Orlando", href: "/parques/universal-orlando" },
+  { label: "Islands of Adventure", href: "/parques/islands-of-adventure" },
+  { label: "Epcot", href: "/parques/epcot" },
 ];
 
 export default function Footer() {
@@ -55,8 +55,9 @@ export default function Footer() {
             </p>
 
             <p className="text-white/40 text-sm leading-relaxed mb-8">
-              Roteiro, ingressos, casa, carro e guia nos parques. Atendimento
-              em português, pagamento em reais, escritório em Orlando.
+              Assessoria com escritório em Orlando desde 2019. Intermediamos roteiro,
+              ingressos, casa, carro e guia nos parques, com atendimento em
+              português e pagamento em reais.
             </p>
 
             {/* Social links */}

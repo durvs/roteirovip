@@ -54,3 +54,18 @@ h1, h2, h3, h4, h5, h6 {
 .legal-prose a:hover {
   color: #c9a84c;
 }
+
+/* Blog / parques */
+.post-prose p { margin-bottom: 1.5rem; }
+.post-prose strong { color: #000; font-weight: 700; }
+.post-prose h2, .post-prose h3 { font-family: var(--font-heading); font-weight: 900; color: #000; margin: 2.5rem 0 1rem; line-height: 1.2; }
+.post-prose h2 { font-size: 1.75rem; }
+.post-prose h3 { font-size: 1.35rem; }
+.post-prose ul, .post-prose ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.post-prose ul { list-style: disc; }
+.post-prose ol { list-style: decimal; }
+.post-prose li { margin-bottom: 0.5rem; }
+.post-prose a { text-decoration: underline; }
+.post-prose a:hover { color: #c9a84c; }
+.post-prose img { display: block; width: 100%; height: auto; margin: 2.5rem 0; }
+.post-prose p:has(> img:only-child) { margin: 0; }

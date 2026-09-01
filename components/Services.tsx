@@ -11,46 +11,46 @@ const services = [
     name: "Roteiro dia a dia",
     image: "/images/passagem-aerea.webp",
     description:
-      "Cada dia da viagem definido: parque, dia livre, compras, chegada e volta. Revisado quantas vezes for preciso, sem custo extra.",
+      "Cada dia da viagem definido: parque, dia livre, compras, chegada e retorno. Revisado quantas vezes for preciso, sem custo adicional.",
   },
   {
     name: "Ingressos e fura-fila",
     image: "/images/universal-studios.webp",
     description:
-      "Emitimos os ingressos da Disney e da Universal, vinculamos no app e cuidamos do Express Pass e do Lightning Lane por vocês.",
+      "Intermediamos a emissão dos ingressos da Disney e da Universal, acompanhamos a vinculação ao aplicativo e a compra do Express Pass e do Lightning Lane.",
   },
   {
     name: "Guia dentro do parque",
     image: "/images/disney-world.webp",
     description:
-      "Um guia acompanha a família no parque, agendando atrações e restaurantes enquanto vocês só aproveitam.",
+      "Um guia parceiro acompanha a família no parque, agendando atrações e restaurantes enquanto vocês aproveitam.",
   },
   {
     name: "Casa e carro",
     image: "/images/assessoria.webp",
     description:
-      "Casa em condomínio com piscina aquecida, carro retirado no aeroporto, contrato e vouchers na sua mão antes de embarcar.",
+      "Selecionamos e intermediamos a reserva da casa em condomínio, com piscina aquecida, e do carro retirado no aeroporto. Contrato e vouchers em mãos antes do embarque.",
   },
   {
     name: "Concierge",
     image: "/images/epcot.webp",
     description:
-      "Mesa com personagens, festa de Halloween, jogo da NBA, oficina de sabre de luz. Se existe em Orlando, a gente reserva.",
+      "Mesa com personagens, festas de Halloween, jogo da NBA, oficina de sabre de luz. Se existe em Orlando, intermediamos a reserva.",
   },
   {
     name: "Chofer",
     image: "/images/chofer.webp",
-    description: "Motorista particular para quem prefere não dirigir nem procurar vaga em Orlando.",
+    description: "Motorista particular, por meio de parceiros locais, para quem prefere não dirigir em Orlando.",
   },
   {
     name: "Babysitter",
     image: "/images/babysitter.webp",
-    description: "Babá de confiança para os pais terem uma noite livre sem preocupação.",
+    description: "Profissionais parceiras de confiança, para que os pais tenham uma noite livre com tranquilidade.",
   },
   {
     name: "Registro VIP",
     image: "/images/registro-camera.webp",
-    description: "Fotógrafo acompanhando a família nos parques. Vocês voltam com as fotos, não só com a lembrança.",
+    description: "Fotógrafo parceiro acompanhando a família nos parques. Vocês voltam com as fotos, não apenas com a lembrança.",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function Services() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
             >
-              O que a gente faz
+              Assessoria completa
             </motion.p>
             <motion.h2
               className="font-heading font-black leading-tight text-black"

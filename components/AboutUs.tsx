@@ -7,15 +7,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const parks = [
-  { name: "Magic Kingdom", href: "/#parques" },
-  { name: "Animal Kingdom", href: "/#parques" },
-  { name: "Hollywood Studios", href: "/#parques" },
-  { name: "Universal Orlando", href: "/#parques" },
-  { name: "Islands of Adventure", href: "/#parques" },
-  { name: "Busch Gardens", href: "/#parques" },
-  { name: "Legoland", href: "/#parques" },
-  { name: "SeaWorld", href: "/#parques" },
-  { name: "Epcot", href: "/#parques" },
+  { name: "Magic Kingdom", href: "/parques/magic-kingdom" },
+  { name: "Animal Kingdom", href: "/parques/animal-kingdom" },
+  { name: "Hollywood Studios", href: "/parques/hollywood-studios" },
+  { name: "Universal Orlando", href: "/parques/universal-orlando" },
+  { name: "Islands of Adventure", href: "/parques/islands-of-adventure" },
+  { name: "Busch Gardens", href: "/parques/busch-gardens" },
+  { name: "Legoland", href: "/parques/legoland" },
+  { name: "SeaWorld", href: "/parques/seaworld" },
+  { name: "Epcot", href: "/parques/epcot" },
 ];
 
 const photos = [
@@ -75,12 +75,13 @@ export default function AboutUs() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              Somos uma agência com escritório em Orlando, feita para famílias
-              brasileiras que vêm pelos parques. O trabalho começa numa reunião
-              por vídeo, vira um roteiro dia a dia e termina com um guia ao lado
-              da sua família dentro do parque. No meio do caminho, cuidamos de
-              ingressos, casa, carro, restaurantes e da burocracia que ninguém
-              quer fazer.
+              Desde 2019, a Roteiro VIP é uma assessoria com escritório em
+              Orlando, dedicada a famílias brasileiras que vêm pelos parques. Tudo começa em uma
+              reunião por vídeo, ganha forma em um roteiro dia a dia e culmina
+              com um guia parceiro ao lado da sua família dentro do parque. No
+              caminho, intermediamos ingressos, casa, carro, restaurantes e a
+              burocracia que ninguém quer enfrentar, sempre com fornecedores que
+              conhecemos de perto.
             </motion.p>
 
             {/* Parks list */}

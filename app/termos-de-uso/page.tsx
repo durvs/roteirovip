@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: `Termos e condições de uso do site e dos serviços de assessoria e intermediação de viagens da ${site.legalName}.`,
 };
 
-const UPDATED = "31 de agosto de 2026";
+const UPDATED = "janeiro de 2026";
 
 const sections: LegalSection[] = [
   {

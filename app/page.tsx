@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import HeroSlider from "@/components/HeroSlider";
 import AboutUs from "@/components/AboutUs";
 import ParkHighlights from "@/components/ParkHighlights";
@@ -6,12 +5,14 @@ import CTASection from "@/components/CTASection";
 import Testimonials from "@/components/Testimonials";
 import Services from "@/components/Services";
 import Blog from "@/components/Blog";
-import Footer from "@/components/Footer";
+import { getPosts } from "@/lib/content";
 
 export default function Home() {
+  const posts = getPosts()
+    .slice(0, 4)
+    .map((p) => ({ title: p.title, date: p.dateLabel, href: `/blog/${p.slug}`, category: p.category }));
   return (
     <>
-      <Navbar />
       <main>
         <HeroSlider />
         <AboutUs />
@@ -19,9 +20,8 @@ export default function Home() {
         <CTASection />
         <Testimonials />
         <Services />
-        <Blog />
+        <Blog posts={posts} />
       </main>
-      <Footer />
     </>
   );
 }

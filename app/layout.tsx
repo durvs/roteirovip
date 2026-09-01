@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -20,12 +22,12 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: "Roteiro VIP | Viagens para os parques de Orlando",
   description:
-    "Agência em Orlando que monta seu roteiro dia a dia, emite ingressos, reserva casa e restaurantes e coloca um guia com a família dentro do parque. Atendimento em português, pagamento em reais.",
+    "Assessoria em Orlando desde 2019 que monta o seu roteiro dia a dia e intermedia ingressos, casa, restaurantes e guia nos parques junto aos melhores fornecedores. Atendimento em português, pagamento em reais.",
   keywords: "roteiro vip, orlando, disney, universal, parques temáticos, roteiro personalizado, guia nos parques, ingressos disney",
   openGraph: {
     title: "Roteiro VIP | Viagens para os parques de Orlando",
     description:
-      "Roteiro dia a dia, ingressos, casa, carro e guia nos parques. Atendimento em português, pagamento em reais.",
+      "Roteiro dia a dia e intermediação de ingressos, casa, carro e guia nos parques. Atendimento em português, pagamento em reais.",
     type: "website",
   },
 };
@@ -36,8 +38,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${montserrat.variable} ${sourceSans.variable} h-full`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-BR" data-scroll-behavior="smooth" className={`${montserrat.variable} ${sourceSans.variable} h-full`}>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

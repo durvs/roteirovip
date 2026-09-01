@@ -85,9 +85,9 @@ export default function CTASection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.5 }}
             >
-              Quantas pessoas, idade das crianças, datas. Com isso a gente marca
-              uma reunião por vídeo e volta com sugestões de casa, roteiro e
-              valores. Sem compromisso.
+              Quantas pessoas, idade das crianças, datas em mente. Com isso,
+              agendamos uma reunião por vídeo e apresentamos sugestões de casa,
+              roteiro e valores. Sem compromisso.
             </motion.p>
 
             <motion.div
@@ -112,7 +112,7 @@ export default function CTASection() {
               transition={{ duration: 0.7, delay: 0.9 }}
             >
               {[
-                { value: "Orlando", label: "Escritório local" },
+                { value: "2019", label: "Em Orlando desde" },
                 { value: "Pix", label: "Pague em reais" },
                 { value: "1 dia útil", label: "Para responder" },
               ].map((stat) => (

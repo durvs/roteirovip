@@ -6,34 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, ArrowRight } from "lucide-react";
 
-const posts = [
-  {
-    title: "Os maiores Arranha-Céus dos Estados Unidos",
-    date: "5 de abril de 2024",
-    href: "/blog/arranha-ceus-estados-unidos",
-    category: "Destinos",
-  },
-  {
-    title: "Georgia Aquarium: O maior aquário dos Estados Unidos",
-    date: "5 de abril de 2024",
-    href: "/blog/georgia-aquarium",
-    category: "Atrações",
-  },
-  {
-    title: "Cidades onde o dia é mais longo no verão estadunidense",
-    date: "5 de abril de 2024",
-    href: "/blog/dia-mais-longo-verao",
-    category: "Dicas",
-  },
-  {
-    title: "Parques em Atlanta para aproveitar um ótimo dia",
-    date: "5 de abril de 2024",
-    href: "/blog/parques-atlanta",
-    category: "Parques",
-  },
-];
+export type BlogPostCard = { title: string; date: string; href: string; category: string };
 
-export default function Blog() {
+export default function Blog({ posts }: { posts: BlogPostCard[] }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
