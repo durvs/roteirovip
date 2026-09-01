@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: `Termos e condições de uso do site e dos serviços de assessoria e intermediação de viagens da ${site.legalName}.`,
 };
 
-const UPDATED = "janeiro de 2026";
 
 const sections: LegalSection[] = [
   {
@@ -38,6 +37,21 @@ const sections: LegalSection[] = [
         </p>
         <p>
           <strong>A Roteiro VIP não é</strong> operadora, proprietária ou administradora de parques temáticos, atrações, hotéis, companhias aéreas, locadoras de veículos, restaurantes, empresas de transporte, seguradoras ou qualquer outro prestador de serviço turístico (&quot;Fornecedores&quot;). Ingressos, hospedagem, passagens, transporte, passeios e demais produtos são fornecidos exclusivamente pelos respectivos Fornecedores, sob os termos, condições e políticas de cada um deles.
+        </p>
+        <p>Entre os serviços que a Roteiro VIP organiza, indica ou intermedia, incluem-se, exemplificativamente:</p>
+        <ul>
+          <li>elaboração de roteiros personalizados;</li>
+          <li>auxílio na aquisição de ingressos para parques temáticos e demais atrações;</li>
+          <li>guiamento, presencial ou virtual, realizado por guias contratados ou indicados pela Roteiro VIP, que são prestadores de serviço independentes;</li>
+          <li>indicação de motoristas e serviços de transfer;</li>
+          <li>intermediação de locação de veículos;</li>
+          <li>intermediação de hospedagem (hotéis, resorts e casas de temporada);</li>
+          <li>indicação de serviços de limpeza residencial, babysitter e fotografia;</li>
+          <li>reservas de restaurantes e experiências; e</li>
+          <li>outros serviços de apoio à viagem oferecidos pela Roteiro VIP ou por seus parceiros, mediante consulta prévia.</li>
+        </ul>
+        <p>
+          Esta lista é meramente exemplificativa. Em relação a todos esses serviços, <strong>com exceção da elaboração do roteiro personalizado em si</strong>, que é prestada diretamente pela Roteiro VIP, a Roteiro VIP não é a fornecedora do serviço final: ela organiza, indica, orienta e faz a ponte entre o Cliente e os Fornecedores efetivos, que são pessoas físicas ou jurídicas independentes, com responsabilidade própria pela execução dos seus respectivos serviços.
         </p>
         <p>
           Ao contratar através da Roteiro VIP, você reconhece que atuamos <strong>na qualidade de intermediária (agente)</strong> entre você e os Fornecedores, e que a relação contratual referente à prestação do serviço final é estabelecida diretamente entre você e o Fornecedor.
@@ -70,6 +84,60 @@ const sections: LegalSection[] = [
     ),
   },
   {
+    id: "ingressos",
+    title: "Ingressos e Sistemas de Reserva de Atrações",
+    body: (
+      <>
+        <p>
+          Os ingressos para parques temáticos são emitidos diretamente pelos respectivos parques (por exemplo, Walt Disney World e Universal Orlando Resort), que definem unilateralmente suas políticas de preço, disponibilidade, validade e regras de acesso. A Roteiro VIP intermedia a aquisição e auxilia na vinculação dos ingressos às contas e aplicativos dos parques.
+        </p>
+        <p>
+          Sistemas de reserva prioritária de atrações, como Disney Lightning Lane (Multi Pass e Single Pass) e Universal Express Pass, estão sujeitos à disponibilidade em tempo real, definida exclusivamente pelo parque, e <strong>podem não garantir acesso a todas as atrações desejadas</strong>, especialmente em feriados e alta temporada. A Roteiro VIP e os guias empregam esforços de boa-fé para maximizar o aproveitamento do Cliente, mas não garantem resultado específico quanto a atrações, horários ou disponibilidade, por se tratar de circunstância fora do seu controle.
+        </p>
+        <p>
+          O Cliente que desejar acesso garantido a atrações, sem sujeição a agendamento ou disponibilidade, deve contratar diretamente produtos específicos dos parques com essa finalidade (por exemplo, Lightning Lane Premier Pass), cuja existência e condições serão informadas mediante solicitação.
+        </p>
+        <p>
+          Os valores cobrados discriminam, quando aplicável, o valor do ingresso ou produto do parque e o valor do serviço de guiamento ou organização prestado pela Roteiro VIP. O Cliente tem direito a essa discriminação mediante solicitação.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "guiamento",
+    title: "Guiamento Presencial e Virtual",
+    body: (
+      <>
+        <p>
+          Os guias que acompanham o Cliente, presencial ou virtualmente, são prestadores de serviço independentes, contratados ou indicados pela Roteiro VIP, e não empregados desta.
+        </p>
+        <p>
+          O período de acompanhamento contratado será informado previamente ao Cliente na proposta ou orçamento. Atrasos do Cliente no ponto de encontro poderão ser descontados do período de guiamento contratado. Grupos com número de pessoas acima do limite estabelecido por guia, informado previamente, podem necessitar de guiamento adicional, com custo próprio.
+        </p>
+        <p>
+          O guia deve seguir estritamente as regras e políticas de cada parque quanto a filas, benefícios de acessibilidade e demais normas de acesso. <strong>A Roteiro VIP não autoriza, sob nenhuma hipótese, o uso indevido de benefícios de acessibilidade</strong> ou qualquer outro meio irregular de acesso prioritário. Eventual conduta de um guia em desacordo com as regras do parque é de responsabilidade pessoal do guia perante o parque e perante a Roteiro VIP, que adotará as medidas cabíveis ao tomar conhecimento do fato.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "hospedagem-veiculos",
+    title: "Hospedagem e Locação de Veículos",
+    body: (
+      <>
+        <p>
+          A Roteiro VIP pode intermediar reservas de hospedagem (hotéis, resorts ou casas de temporada) junto a Fornecedores terceiros. A prestação do serviço de hospedagem em si, incluindo condições do imóvel, funcionamento de utilidades (água, energia, ar-condicionado, internet), limpeza e demais aspectos operacionais, é de responsabilidade exclusiva do Fornecedor de hospedagem (rede hoteleira, proprietário do imóvel ou plataforma de locação). Problemas relativos à hospedagem devem ser reportados imediatamente à Roteiro VIP e ao Fornecedor, para que as medidas cabíveis sejam adotadas junto ao responsável.
+        </p>
+        <p>
+          A Roteiro VIP pode intermediar a locação de veículos junto a locadoras parceiras. O contrato de locação é celebrado entre o Cliente e a locadora, que é a responsável pelas condições do veículo, seguro, multas, sinistros e demais aspectos da locação. A Roteiro VIP auxilia na negociação e na organização logística, mas não é parte no contrato de locação nem se responsabiliza pela sua execução.
+        </p>
+        <p>
+          Reservas de restaurantes, sugestões de compras e demais serviços de conveniência são prestados a título de organização e cortesia, sujeitos à disponibilidade e às políticas de cada estabelecimento, sem garantia de resultado por parte da Roteiro VIP.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "reservas",
     title: "Orçamentos, Reservas, Preços e Pagamentos",
     body: (
@@ -85,6 +153,9 @@ const sections: LegalSection[] = [
         </p>
         <p>
           O Cliente é responsável por conferir todos os dados (nomes conforme documento de viagem, datas, quantidades) antes da confirmação. Custos decorrentes de informações incorretas fornecidas pelo Cliente serão de sua exclusiva responsabilidade.
+        </p>
+        <p>
+          Os pagamentos podem ser processados por meio de plataformas de pagamento parceiras (por exemplo, Brazil Pays Services LLC), que atuam como processadoras ou facilitadoras de pagamento e câmbio, sem integrar a prestação dos serviços turísticos em si. As condições de câmbio e eventuais tarifas da processadora serão informadas no momento do pagamento.
         </p>
       </>
     ),
@@ -112,7 +183,7 @@ const sections: LegalSection[] = [
           Viagens e visitas a parques temáticos envolvem riscos inerentes, incluindo, sem limitação: atrações de alta intensidade, longas caminhadas, exposição ao calor e a condições climáticas adversas (incluindo furacões e tempestades), grandes aglomerações, acidentes de trânsito, doenças, furtos e imprevistos de ordem pública ou sanitária. Ao viajar, <strong>você assume voluntariamente esses riscos</strong>, para si e pelos viajantes sob sua responsabilidade.
         </p>
         <p>
-          Recomendamos fortemente a contratação de <strong>seguro-viagem</strong> com cobertura médica, de cancelamento e de bagagem. A Roteiro VIP não é seguradora e não fornece cobertura de qualquer natureza. Despesas médicas nos Estados Unidos são de responsabilidade exclusiva do viajante.
+          A contratação de <strong>seguro-viagem</strong> é de responsabilidade do Cliente. Recomendamos fortemente cobertura médica, de cancelamento e de bagagem adequada às necessidades de cada viajante. A Roteiro VIP pode oferecer essa opção como serviço adicional, por meio de seguradoras parceiras, mas não é seguradora e não fornece cobertura de qualquer natureza. Despesas médicas nos Estados Unidos são de responsabilidade exclusiva do viajante.
         </p>
         <p>
           Restrições de altura, idade ou saúde para atrações são definidas pelos parques. É dever do viajante avaliar suas condições físicas e de saúde e respeitar as regras de segurança de cada Fornecedor.
@@ -149,7 +220,10 @@ const sections: LegalSection[] = [
           A Roteiro VIP não responde por eventos de força maior ou caso fortuito, incluindo, sem limitação, fenômenos naturais, furacões, pandemias, greves, atos governamentais, fechamento de fronteiras, falhas de transporte, atos de terrorismo, falhas de sistemas de terceiros e quaisquer outros eventos fora do seu controle razoável.
         </p>
         <p>
-          Algumas jurisdições não permitem a exclusão de determinadas garantias ou a limitação de certos danos; nesses casos, as limitações acima se aplicam na máxima extensão permitida.
+          Nos limites permitidos pela legislação aplicável, a responsabilidade da Roteiro VIP limita-se aos serviços por ela diretamente prestados (organização, intermediação e informação). A Roteiro VIP não responde por atos, omissões ou condições de Fornecedores terceiros independentes (parques, guias, locadoras, hospedagens, restaurantes e demais prestadores), sem prejuízo dos direitos do consumidor previstos em lei quanto à cadeia de fornecimento.
+        </p>
+        <p>
+          <strong>Esta cláusula não exclui, restringe nem renuncia a quaisquer direitos do consumidor garantidos por lei aplicável</strong>, inclusive, quando incidente, quanto à responsabilidade solidária entre fornecedores da cadeia de consumo nos termos do Código de Defesa do Consumidor brasileiro. Algumas jurisdições não permitem a exclusão de determinadas garantias ou a limitação de certos danos; nesses casos, as limitações acima se aplicam na máxima extensão permitida.
         </p>
       </>
     ),
@@ -276,7 +350,6 @@ export default function TermosPage() {
     <LegalDoc
       eyebrow="Jurídico"
       title="Termos de Uso"
-      updatedAt={UPDATED}
       intro={
         <p>
           Leia com atenção. Estes Termos contêm disposições importantes sobre a natureza dos nossos serviços de <strong>intermediação</strong>, a responsabilidade de <strong>fornecedores terceiros</strong>, <strong>limitações de responsabilidade</strong>, <strong>renúncia a júri e a ações coletivas</strong> e o <strong>foro exclusivo na Flórida</strong>.

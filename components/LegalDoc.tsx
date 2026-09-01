@@ -6,7 +6,7 @@ export type LegalSection = { id: string; title: string; body: ReactNode };
 type Props = {
   eyebrow: string;
   title: string;
-  updatedAt: string;
+  updatedAt?: string;
   intro?: ReactNode;
   sections: LegalSection[];
 };
@@ -15,7 +15,7 @@ export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections }:
   return (
     <>
       <main>
-        <PageHeader eyebrow={eyebrow} title={title} description={`Última atualização: ${updatedAt}`} />
+        <PageHeader eyebrow={eyebrow} title={title} description={updatedAt ? `Última atualização: ${updatedAt}` : undefined} />
         <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-4 gap-16">
             <nav className="hidden lg:block lg:col-span-1" aria-label="Sumário">

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: `Como a ${site.legalName} coleta, utiliza e protege os seus dados pessoais.`,
 };
 
-const UPDATED = "Janeiro de 2026";
 
 const sections: LegalSection[] = [
   {
@@ -142,7 +141,6 @@ export default function PrivacidadePage() {
     <LegalDoc
       eyebrow="Jurídico"
       title="Política de Privacidade"
-      updatedAt={UPDATED}
       sections={sections}
     />
   );
