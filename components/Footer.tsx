@@ -31,11 +31,17 @@ const parks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white">
-      {/* Map/decorative top area */}
+    <footer className="relative bg-[#111111] text-white overflow-hidden">
+      {/* Linha dourada no topo */}
       <div className="relative h-2 bg-gradient-to-r from-transparent via-[#c9a84c] to-transparent opacity-40" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-10">
+      {/* Rota do avião (arte do site antigo): branco sobre preto, atrás das colunas */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-8 h-[420px] bg-[url('/images/footer-rota.webp')] bg-contain bg-top bg-no-repeat opacity-[0.12]"
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
