@@ -46,6 +46,9 @@ const slides = [
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  // Só o primeiro slide vai no HTML inicial (é o LCP). Os demais entram no DOM
+  // depois da hidratação, fora do caminho crítico, mas antes do 1º autoplay (6s).
+  const [restMounted, setRestMounted] = useState(false);
 
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const stripRef = useRef<HTMLDivElement>(null);
@@ -70,6 +73,11 @@ export default function HeroSlider() {
   }, [current]);
 
   useEffect(() => {
+    const t = setTimeout(() => setRestMounted(true), 2500);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(next, 6000);
     return () => clearInterval(interval);
@@ -81,6 +89,7 @@ export default function HeroSlider() {
   };
 
   const goTo = (index: number) => {
+    setRestMounted(true);
     setCurrent(index);
     pauseAutoplay();
   };
@@ -96,7 +105,7 @@ export default function HeroSlider() {
         pauseAutoplay();
       }}
     >
-      {/* Slides: all mounted and preloaded, crossfade via opacity (no blank gap) */}
+      {/* Slides: crossfade via opacity. Slide 0 é preload (LCP); os outros montam após a hidratação. */}
       <div className="absolute inset-0">
         {slides.map((slide, i) => (
           <motion.div
@@ -111,15 +120,19 @@ export default function HeroSlider() {
             style={{ zIndex: i === current ? 1 : 0 }}
             aria-hidden={i !== current}
           >
-            <Image
-              src={slide.image}
-              alt={slide.headline.replace("\n", " ")}
-              fill
-              className="object-cover object-center"
-              priority={i === 0}
-              loading={i === 0 ? undefined : "eager"}
-              sizes="100vw"
-            />
+            {(i === 0 || restMounted) && (
+              <Image
+                src={slide.image}
+                alt={slide.headline.replace("\n", " ")}
+                fill
+                className="object-cover object-center"
+                preload={i === 0}
+                fetchPriority={i === 0 ? "high" : undefined}
+                loading={i === 0 ? "eager" : "lazy"}
+                quality={60}
+                sizes="100vw"
+              />
+            )}
           </motion.div>
         ))}
         {/* Gradient overlays */}
@@ -129,7 +142,7 @@ export default function HeroSlider() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto px-6 lg:px-8 pb-20 lg:pb-0">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={`content-${current}`}
             className="max-w-2xl"

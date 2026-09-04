@@ -2,7 +2,7 @@
 
 import { useActionState, useState, useEffect, startTransition, type FormEvent } from "react";
 import Script from "next/script";
-import { sendGAEvent } from "@next/third-parties/google";
+import { gaEvent } from "@/lib/ga";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { sendContact, type ContactState } from "@/app/contato/actions";
 
@@ -45,7 +45,7 @@ export default function ContactForm() {
   // Conversão GA4: dispara uma vez, quando a action confirma o envio
   useEffect(() => {
     if (state.status === "success") {
-      sendGAEvent("event", "generate_lead", { method: "formulario_contato" });
+      gaEvent("generate_lead", { method: "formulario_contato" });
     }
   }, [state.status]);
 

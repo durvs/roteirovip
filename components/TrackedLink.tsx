@@ -1,7 +1,7 @@
 "use client";
 
 import type { AnchorHTMLAttributes, ReactNode } from "react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { gaEvent } from "@/lib/ga";
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
   /** Nome do evento GA4 (ex.: "contact") */
@@ -17,7 +17,7 @@ export default function TrackedLink({ event, params, onClick, children, ...rest 
     <a
       {...rest}
       onClick={(e) => {
-        sendGAEvent("event", event, params ?? {});
+        gaEvent(event, params);
         onClick?.(e);
       }}
     >

@@ -112,7 +112,7 @@ export default function ParkHighlights() {
                   alt={park.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="320px"
+                  sizes="(min-width: 1024px) 320px, 288px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />

@@ -3,7 +3,8 @@ import { Montserrat, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
+import { GA_ID } from "@/lib/ga";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   variable: "--font-source-sans",
   weight: ["300", "400", "600"],
-  style: ["normal", "italic"],
+  // Sem itálico: só os depoimentos usam, e o browser sintetiza. Poupa um woff2 (~35 KB) no caminho crítico.
   display: "swap",
 });
 
@@ -46,7 +47,11 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-BYDJ5WS4EQ" />
+      {/* GA4 com lazyOnload: o gtag.js (~150 KB) só baixa depois do load, sem concorrer com o LCP */}
+      <Script id="ga-init" strategy="lazyOnload">
+        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+      </Script>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
     </html>
   );
 }
