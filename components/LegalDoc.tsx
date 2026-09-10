@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import TocLink from "@/components/TocLink";
 
 export type LegalSection = { id: string; title: string; body: ReactNode };
 
@@ -49,10 +50,10 @@ export default function LegalDoc({ eyebrow, title, updatedAt, intro, sections, l
                 <ol className="space-y-2.5">
                   {sections.map((s, i) => (
                     <li key={s.id}>
-                      <a href={`#${s.id}`} className="text-sm text-gray-600 hover:text-[#c9a84c] transition-colors leading-snug block">
+                      <TocLink targetId={s.id} className="text-sm text-gray-600 hover:text-[#c9a84c] transition-colors leading-snug block">
                         <span className="text-[#c9a84c] font-heading font-bold mr-2">{String(i + 1).padStart(2, "0")}</span>
                         {s.title}
-                      </a>
+                      </TocLink>
                     </li>
                   ))}
                 </ol>
