@@ -128,7 +128,7 @@ export default function QuestionnaireForm({
         <p className="rounded-sm border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">{error}</p>
       )}
 
-      <div className="sticky bottom-4 flex justify-end">
+      <div className="flex justify-end">
         <button
           type="submit"
           disabled={sending || !accepted}
