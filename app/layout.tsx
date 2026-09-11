@@ -4,7 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import { GA_ID } from "@/lib/ga";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { GTM_ID } from "@/lib/ga";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -43,15 +44,26 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" data-scroll-behavior="smooth" className={`${montserrat.variable} ${sourceSans.variable} h-full`}>
       <body className="min-h-full flex flex-col">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Navbar />
         {children}
         <Footer />
       </body>
-      {/* GA4 com lazyOnload: o gtag.js (~150 KB) só baixa depois do load, sem concorrer com o LCP */}
-      <Script id="ga-init" strategy="lazyOnload">
-        {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
-      </Script>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
+      {/* GTM (afterInteractive, equivale ao snippet oficial com async). O GA4 passa a ser configurado dentro do container. */}
+      <GoogleTagManager gtmId={GTM_ID} />
+      {/* Umami: afterInteractive equivale ao `defer` do snippet oficial (carrega após a hidratação, sem bloquear o LCP) */}
+      <Script
+        src="https://cloud.umami.is/script.js"
+        data-website-id="65521f94-3c59-4809-93c3-a71fb72233d2"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
